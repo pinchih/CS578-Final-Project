@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application>
+    <packageName>com.example.tomit_000.myapplication</packageName>
+    <components>
+        <Component>
+            <type>activity</type>
+            <name>com.example.tomit_000.myapplication.ActionSender</name>
+            <RequiredPermissions/>
+            <IntentFilter>
+                <filter>
+                    <actions>android.intent.action.MAIN</actions>
+                    <categories>android.intent.category.LAUNCHER</categories>
+                    <pathData></pathData>
+                </filter>
+            </IntentFilter>
+            <PropagatedPermissions/>
+        </Component>
+    </components>
+    <newIntents>
+        <Intent>
+            <calledAt>com.example.tomit_000.myapplication.ActionSender$1: void onClick(android.view.View)</calledAt>
+            <sender>com.example.tomit_000.myapplication.ActionSender</sender>
+            <component></component>
+            <action>&quot;android.intent.action.SEND&quot;</action>
+            <dataType>&quot;image/*&quot;</dataType>
+            <scheme>hasValue</scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>u3cp7hibtiotf9rkfeqvspvfk6</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.example.tomit_000.myapplication.ActionSender$1: void onClick(android.view.View)</calledAt>
+            <sender>com.example.tomit_000.myapplication.ActionSender</sender>
+            <component></component>
+            <action>&quot;android.intent.action.SEND&quot;</action>
+            <dataType>&quot;image/*&quot;</dataType>
+            <scheme>hasValue</scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>fru5i0nuf2av9t8thtbsab43i</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.example.tomit_000.myapplication.ActionSender$1: void onClick(android.view.View)</calledAt>
+            <sender>com.example.tomit_000.myapplication.ActionSender</sender>
+            <component></component>
+            <action>&quot;android.intent.action.SEND&quot;</action>
+            <dataType>&quot;image/*&quot;</dataType>
+            <scheme>hasValue</scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>iv0p8deqlhqt206fqqob0f3tfq</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.example.tomit_000.myapplication.ActionSender$1: void onClick(android.view.View)</calledAt>
+            <sender>com.example.tomit_000.myapplication.ActionSender</sender>
+            <component></component>
+            <action>&quot;android.intent.action.SEND&quot;</action>
+            <dataType>&quot;image/*&quot;</dataType>
+            <scheme>hasValue</scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>pp20h5a2r5n1qksvce4ctuu2ui</id>
+            <random/>
+        </Intent>
+    </newIntents>
+    <ContentProviders/>
+    <usesPermissions/>
+    <actuallyUsesPermissions/>
+    <requiredPermissions/>
+    <apkFile>../../../app_repo/APKs/ActionSenderTats.apk</apkFile>
+    <name>ActionSenderTats</name>
+</application>

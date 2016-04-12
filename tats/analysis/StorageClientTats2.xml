@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application>
+    <packageName>com.example.android.storageclient</packageName>
+    <components>
+        <Component>
+            <type>activity</type>
+            <name>com.example.android.storageclient.MainActivity</name>
+            <RequiredPermissions/>
+            <IntentFilter>
+                <filter>
+                    <actions>android.intent.action.MAIN</actions>
+                    <actions>android.intent.action.SEND</actions>
+                    <data>
+                        <scheme></scheme>
+                        <mimeType>image/*</mimeType>
+                        <host></host>
+                        <pathPattern></pathPattern>
+                    </data>
+                    <categories>android.intent.category.LAUNCHER</categories>
+                    <categories>android.intent.category.DEFAULT</categories>
+                    <pathData></pathData>
+                </filter>
+                <filter>
+                    <actions>android.intent.action.MAIN</actions>
+                    <actions>android.intent.action.SEND</actions>
+                    <data>
+                        <scheme></scheme>
+                        <mimeType>image/*</mimeType>
+                        <host></host>
+                        <pathPattern></pathPattern>
+                    </data>
+                    <categories>android.intent.category.LAUNCHER</categories>
+                    <categories>android.intent.category.DEFAULT</categories>
+                    <pathData></pathData>
+                </filter>
+            </IntentFilter>
+            <PropagatedPermissions/>
+        </Component>
+    </components>
+    <newIntents/>
+    <ContentProviders>
+        <ContentProvider>
+            <uris>ANY_URI</uris>
+            <dbMethod>query</dbMethod>
+            <calledAt>com.example.android.storageclient.StorageClientFragment$ImageDialogFragment: void dumpImageMetaData(android.net.Uri)</calledAt>
+            <exitOrEntry>exit</exitOrEntry>
+        </ContentProvider>
+    </ContentProviders>
+    <usesPermissions>
+        <permission>INTERNET</permission>
+    </usesPermissions>
+    <actuallyUsesPermissions/>
+    <requiredPermissions/>
+    <apkFile>../../../app_repo/APKs/StorageClientTats2.apk</apkFile>
+    <name>StorageClientTats2</name>
+</application>

@@ -1,0 +1,38 @@
+{
+  "nodes":[
+    {"name":" AppMeasurementReceiver ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" DirectoryChooserActivity ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" MarshmallowWakeUpReceiver ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" MyAppWidgetProvider ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" InterstitialAdActivity ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" WLReceiver ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" PreviewActivity ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" RevocationBoundService ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" VideoPlayer ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" SnoozeTimeSelector ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" StatusbarNotificationService ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" AlarmsReactivationBroadcastReceiver ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" AlarmsActivity ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" AdActivity ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" AlarmsReactivationIntentService ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" AppMeasurementContentProvider ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" WifiLockService ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" AppMeasurementService ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" AlarmsIntentService ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" StatusbarNotificationReceiver ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" MMActivity ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" RingerActivity ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" NetworkSwitchReceiver ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" MyAppWidgetConfigure ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" InAppPurchaseActivity ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" SpeakingClockService ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" RingerService ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" SignInHubActivity ","group": 2 ,"value":" "}
+  ],
+  "links":[
+    {"source": 1 ,"target": 0 ,"value":" [Intent] Explicit \n   [filter]\n      AlarmsActivity \n   [sender]\n      RingerActivity \n "},
+    {"source": 20 ,"target": 12 ,"value":" [Intent] Explicit \n   [filter]\n      WifiLockService \n   [sender]\n      NetworkSwitchReceiver \n "},
+    {"source": 23 ,"target": 14 ,"value":" [Intent] Explicit \n   [filter]\n      AlarmsReactivationIntentService \n   [sender]\n      AlarmsReactivationBroadcastReceiver \n "},
+    {"source": 0 ,"target": 0 ,"value": "dummy"}
+  ]
+}

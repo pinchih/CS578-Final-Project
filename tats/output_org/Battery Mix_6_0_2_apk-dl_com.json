@@ -1,0 +1,40 @@
+{
+  "nodes":[
+    {"name":" ListDisplayActivity ","group": 6 ,"value":"[permissions]\n "},
+    {"name":" BatteryMixWidgetDetailProvider ","group": 6 ,"value":"[permissions]\n "},
+    {"name":" BatteryMixWidgetProvider ","group": 6 ,"value":"[permissions]\n "},
+    {"name":" AdActivity ","group": 6 ,"value":"[permissions]\n "},
+    {"name":" MainPreference ","group": 6 ,"value":"[permissions]\n "},
+    {"name":" FileExplorer ","group": 6 ,"value":"[permissions]\n "},
+    {"name":" BatteryBarPreference ","group": 6 ,"value":"[permissions]\n "},
+    {"name":" InAppPurchaseActivity ","group": 6 ,"value":"[permissions]\n "},
+    {"name":" ExportActivity ","group": 6 ,"value":"[permissions]\n "},
+    {"name":" RawLogActivity ","group": 6 ,"value":"[permissions]\n "},
+    {"name":" ProcessGraphActivity ","group": 6 ,"value":"[permissions]\n "},
+    {"name":" BatteryMix ","group": 6 ,"value":"[permissions]\n "},
+    {"name":" AlermPreference ","group": 6 ,"value":"[permissions]\n "},
+    {"name":" InstallReferrerReceiver ","group": 6 ,"value":"[permissions]\n "},
+    {"name":" ShutdownReceiver ","group": 6 ,"value":"[permissions]\n "},
+    {"name":" ProPreference ","group": 6 ,"value":"[permissions]\n "},
+    {"name":" DeleteAlarmReceiver ","group": 6 ,"value":"[permissions]\n "},
+    {"name":" BootReceiver ","group": 6 ,"value":"[permissions]\n "},
+    {"name":" WatchAlarmReceiver ","group": 6 ,"value":"[permissions]\n "},
+    {"name":" InstallReferrerService ","group": 6 ,"value":"[permissions]\n "},
+    {"name":" BatteryMixService ","group": 6 ,"value":" "}
+  ],
+  "links":[
+    {"source": 0 ,"target": 1 ,"value":" [Intent] Explicit \n   [filter]\n      MainPreference \n   [sender]\n      BatteryMix \n "},
+    {"source": 18 ,"target": 12 ,"value":" [Intent] Explicit \n   [filter]\n      BatteryMixService \n   [sender]\n      BatteryMixWidgetProvider \n "},
+    {"source": 0 ,"target": 6 ,"value":" [Intent] Explicit \n   [filter]\n      BatteryBarPreference \n   [sender]\n      BatteryMix \n "},
+    {"source": 9 ,"target": 8 ,"value":" [Intent] Explicit \n   [filter]\n      ExportActivity \n   [sender]\n      FileExplorer \n "},
+    {"source": 0 ,"target": 7 ,"value":" [Intent] Explicit \n   [filter]\n      ProPreference \n   [sender]\n      BatteryMix \n "},
+    {"source": 0 ,"target": 12 ,"value":" [Intent] Explicit \n   [filter]\n      BatteryMixService \n   [sender]\n      BatteryMix \n "},
+    {"source": 8 ,"target": 9 ,"value":" [Intent] Explicit \n   [filter]\n      FileExplorer \n   [sender]\n      ExportActivity \n "},
+    {"source": 14 ,"target": 12 ,"value":" [Intent] Explicit \n   [filter]\n      BatteryMixService \n   [sender]\n      BootReceiver \n "},
+    {"source": 19 ,"target": 12 ,"value":" [Intent] Explicit \n   [filter]\n      BatteryMixService \n   [sender]\n      BatteryMixWidgetDetailProvider \n "},
+    {"source": 0 ,"target": 4 ,"value":" [Intent] Explicit \n   [filter]\n      ProcessGraphActivity \n   [sender]\n      BatteryMix \n "},
+    {"source": 1 ,"target": 6 ,"value":" [Intent] Explicit \n   [filter]\n      BatteryBarPreference \n   [sender]\n      MainPreference \n "},
+    {"source": 7 ,"target": 8 ,"value":" [Intent] Explicit \n   [filter]\n      ExportActivity \n   [sender]\n      ProPreference \n "},
+    {"source": 0 ,"target": 0 ,"value": "dummy"}
+  ]
+}

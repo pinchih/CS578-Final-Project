@@ -1,0 +1,10 @@
+{
+  "nodes":[
+    {"name":" LWPActivity ","group": 12 ,"value":"[permissions]\n "},
+    {"name":" MainActivity ","group": 12 ,"value":"[permissions]\n "},
+    {"name":" NewWallpaperService ","group": 12 ,"value":" "}
+  ],
+  "links":[
+    {"source": 0 ,"target": 0 ,"value": "dummy"}
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "nodes":[
+    {"name":" ActivityScreen$WebAudioDelegate ","group": 13 ,"value":"[permissions]\n "},
+    {"name":" ActivityScreen$WebDelegate ","group": 13 ,"value":"[permissions]\n "},
+    {"name":" ActivityVideoList ","group": 13 ,"value":"[permissions]\n "},
+    {"name":" IMBrowserActivity ","group": 13 ,"value":"[permissions]\n "},
+    {"name":" ActivityAbout ","group": 13 ,"value":"[permissions]\n "},
+    {"name":" FFService ","group": 13 ,"value":"[permissions]\n "},
+    {"name":" ActivityScanRootSelector ","group": 13 ,"value":"[permissions]\n "},
+    {"name":" ActivityVideoList$AudioEventReceiver ","group": 13 ,"value":"[permissions]\n "},
+    {"name":" AdActivity ","group": 13 ,"value":"[permissions]\n "},
+    {"name":" PlayService ","group": 13 ,"value":"[permissions]\n "},
+    {"name":" ActivityScreen$AudioEventReceiver ","group": 13 ,"value":"[permissions]\n "},
+    {"name":" ActivityPreferences ","group": 13 ,"value":"[permissions]\n "},
+    {"name":" MobileAdBrowserActivity ","group": 13 ,"value":"[permissions]\n "},
+    {"name":" ActivityScreen$LocalAudioDelegate ","group": 13 ,"value":"[permissions]\n "},
+    {"name":" ActivityScreen ","group": 13 ,"value":"[permissions]\n "},
+    {"name":" VSSP ","group": 13 ,"value":"[permissions]\n "},
+    {"name":" ActivityVideoFile ","group": 13 ,"value":"[permissions]\n "},
+    {"name":" ActivityMessenger ","group": 13 ,"value":"[permissions]\n "},
+    {"name":" PlayService$AudioEventReceiver ","group": 13 ,"value":" "}
+  ],
+  "links":[
+    {"source": 0 ,"target": 0 ,"value": "dummy"}
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "nodes":[
+    {"name":" MyReceiver ","group": 3 ,"value":"[permissions]\n "},
+    {"name":" SettingsActivity ","group": 3 ,"value":"[permissions]\n "},
+    {"name":" OutgoingCallReceiver ","group": 3 ,"value":"[permissions]\n "},
+    {"name":" AdActivity ","group": 3 ,"value":"[permissions]\n "},
+    {"name":" MyService ","group": 3 ,"value":"[permissions]\n "},
+    {"name":" Main ","group": 3 ,"value":" "}
+  ],
+  "links":[
+    {"source": 0 ,"target": 0 ,"value": "dummy"}
+  ]
+}

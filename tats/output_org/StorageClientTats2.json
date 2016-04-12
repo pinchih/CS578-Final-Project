@@ -1,0 +1,8 @@
+{
+  "nodes":[
+    {"name":" MainActivity ","group": 19 ,"value":" "}
+  ],
+  "links":[
+    {"source": 0 ,"target": 0 ,"value": "dummy"}
+  ]
+}

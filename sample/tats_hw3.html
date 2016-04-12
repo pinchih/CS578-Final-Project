@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+.node {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+.link {
+  stroke: #999;
+  stroke-opacity: .6;
+  stroke-width: 3px;
+}
+
+.node text {
+  font: 18px sans-serif;
+/*   fill: white; */
+  stroke: black
+/*   stroke-width: 0.1px; */
+}
+
+</style>
+<body>
+<h1>Tats's HW3</h1>
+<!--TODO: How can I use relative path? -->
+<!--<script type="text/javascript" src="d3/d3.min.js"></script>-->
+<script type="text/javascript" src="https://csci578-project-tomitatsu.c9users.io/tats/d3/d3.min.js"></script>
+
+<script>
+
+var width = 1280,
+    height = 550;
+
+var rect_width = 200,
+    rect_height = 30;
+    
+var color = d3.scale.category20();
+var force = d3.layout.force()
+    .charge(-300)     // the force between nodes
+    .linkDistance(100) // the distance between nodes
+    .gravity(0.09)
+    .size([width, height]);
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+// TODO
+//   d3.json("output_org/merge.json", function(error, graph) {
+  d3.json("https://csci578-project-tomitatsu.c9users.io/tats/output_org/merge.json", function(error, graph) {
+  if (error) throw error;
+
+  force
+      .nodes(graph.nodes)
+      .links(graph.links)
+      .start();
+  for (var i = 100; i > 0; --i) force.tick();
+
+  var marker = svg.append("defs").append("marker")
+      .attr({
+        'id': "arrowhead",
+        'refX': 14,
+        'refY': 2,
+        'markerWidth': 40,
+        'markerHeight': 40,
+        'orient': "auto"
+      });
+  marker.append("path")
+      .attr({
+        d: "M 0,0 V 4 L4,2 Z",
+        fill: "steelblue"
+      });
+
+  var link = svg.selectAll(".link")
+      .data(graph.links)
+      .enter().append("line")
+      .attr("class", "link")
+      .attr("marker-end", "url(#arrowhead)");
+
+  link.append("title")
+      .text(function(d) { return d.value; });
+
+  var node = svg.selectAll(".node")
+      .data(graph.nodes)
+      .enter().append("g")
+      .attr("class", "node")
+      .call(force.drag);
+
+
+  var rect = node.append("rect")
+      .attr("width",200)
+      .attr("height",30)
+      .style("fill", function(d) { return color(d.group); });
+
+  node.append("title")
+      .text(function(d) { return d.value; });
+
+  var text = node.append("text")
+      .style("text-anchor", "middle")
+      .attr("transform", function(d) {
+        return "translate(" + rect_width / 2 + "," + rect_height / 2 + ")";
+      })
+     .text(function(d) { return d.name; });
+
+  d3.selectAll(".node").each(function(d){ d.fixed = true })
+
+  force.on("tick", function() {
+    link.attr("x1", function(d) { return d.source.x; })
+        .attr("y1", function(d) { return d.source.y; })
+        .attr("x2", function(d) { return d.target.x; })
+        .attr("y2", function(d) { return d.target.y; });
+
+    rect.attr("x", function(d) { return d.x; })
+        .attr("y", function(d) { return d.y; });
+
+    text.attr("x", function(d) { return d.x; })
+        .attr("y", function(d) { return d.y; });
+  });
+});
+
+</script>

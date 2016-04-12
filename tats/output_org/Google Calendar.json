@@ -1,0 +1,33 @@
+{
+  "nodes":[
+    {"name":" EventInfoActivity ","group": 11 ,"value":"[permissions]\n "},
+    {"name":" CalendarAppWidgetService ","group": 11 ,"value":"[permissions]\n "},
+    {"name":" SnoozeAlarmsService ","group": 11 ,"value":"[permissions]\n "},
+    {"name":" CalendarRecentSuggestionsProvider ","group": 11 ,"value":"[permissions]\n "},
+    {"name":" AuthNotificationActivity ","group": 11 ,"value":"[permissions]\n "},
+    {"name":" CalendarSettingsActivity ","group": 11 ,"value":"[permissions]\n "},
+    {"name":" EditEventActivity ","group": 11 ,"value":"[permissions]\n "},
+    {"name":" AllInOneActivity ","group": 11 ,"value":"[permissions]\n "},
+    {"name":" CalendarAppWidgetService$CalendarFactory ","group": 11 ,"value":"[permissions]\n "},
+    {"name":" QuickResponseActivity ","group": 11 ,"value":"[permissions]\n "},
+    {"name":" CalendarSyncAdapterBroadcastReceiver ","group": 11 ,"value":"[permissions]\n "},
+    {"name":" AboutActivity ","group": 11 ,"value":"[permissions]\n "},
+    {"name":" SelectSyncedCalendarsMultiAccountActivity ","group": 11 ,"value":"[permissions]\n "},
+    {"name":" CalendarSyncAdapterService ","group": 11 ,"value":"[permissions]\n "},
+    {"name":" AsyncQueryServiceHelper ","group": 11 ,"value":"[permissions]\n "},
+    {"name":" SelectVisibleCalendarsActivity ","group": 11 ,"value":"[permissions]\n "},
+    {"name":" CalendarSyncAdapterIntentService ","group": 11 ,"value":"[permissions]\n "},
+    {"name":" AlertService ","group": 11 ,"value":"[permissions]\n "},
+    {"name":" AlertReceiver ","group": 11 ,"value":"[permissions]\n "},
+    {"name":" DismissAlarmsService ","group": 11 ,"value":"[permissions]\n "},
+    {"name":" SearchActivity ","group": 11 ,"value":"[permissions]\n "},
+    {"name":" AlertActivity ","group": 11 ,"value":"[permissions]\n "},
+    {"name":" InitAlarmsService ","group": 11 ,"value":"[permissions]\n "},
+    {"name":" GoogleCalendarUriIntentFilter ","group": 11 ,"value":"[permissions]\n "},
+    {"name":" CalendarAppWidgetProvider ","group": 11 ,"value":"[permissions]\n "},
+    {"name":" LicenseActivity ","group": 11 ,"value":" "}
+  ],
+  "links":[
+    {"source": 0 ,"target": 0 ,"value": "dummy"}
+  ]
+}

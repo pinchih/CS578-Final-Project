@@ -1,0 +1,2719 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application>
+    <packageName>com.amazing_create.android.andclipfree</packageName>
+    <components>
+        <Component>
+            <type>activity</type>
+            <name>com.amazing_create.android.andclipfree.MainActivity</name>
+            <RequiredPermissions/>
+            <IntentFilter>
+                <filter>
+                    <actions>android.intent.action.MAIN</actions>
+                    <categories>android.intent.category.LAUNCHER</categories>
+                    <pathData></pathData>
+                </filter>
+            </IntentFilter>
+            <PropagatedPermissions/>
+        </Component>
+        <Component>
+            <type>activity</type>
+            <name>com.amazing_create.android.andclipfree.ShareActivity</name>
+            <RequiredPermissions/>
+            <IntentFilter>
+                <filter>
+                    <actions>android.intent.action.SEND</actions>
+                    <data>
+                        <scheme></scheme>
+                        <mimeType>text/*</mimeType>
+                        <host></host>
+                        <pathPattern></pathPattern>
+                    </data>
+                    <categories>android.intent.category.DEFAULT</categories>
+                    <pathData></pathData>
+                </filter>
+            </IntentFilter>
+            <PropagatedPermissions/>
+        </Component>
+        <Component>
+            <type>activity</type>
+            <name>com.amazing_create.android.andclipfree.MushActivity</name>
+            <RequiredPermissions/>
+            <IntentFilter>
+                <filter>
+                    <actions>com.adamrocker.android.simeji.ACTION_INTERCEPT</actions>
+                    <categories>com.adamrocker.android.simeji.REPLACE</categories>
+                    <categories>android.intent.category.DEFAULT</categories>
+                    <pathData></pathData>
+                </filter>
+            </IntentFilter>
+            <PropagatedPermissions/>
+        </Component>
+        <Component>
+            <type>activity</type>
+            <name>com.amazing_create.android.andcliplib.activity.PasswordActivity</name>
+            <RequiredPermissions/>
+            <IntentFilter/>
+            <PropagatedPermissions/>
+        </Component>
+        <Component>
+            <type>activity</type>
+            <name>com.amazing_create.android.andcliplib.activity.EditHistoryDialog</name>
+            <RequiredPermissions/>
+            <IntentFilter/>
+            <PropagatedPermissions/>
+        </Component>
+        <Component>
+            <type>activity</type>
+            <name>com.amazing_create.android.andcliplib.activity.EditRegistDialog</name>
+            <RequiredPermissions/>
+            <IntentFilter/>
+            <PropagatedPermissions/>
+        </Component>
+        <Component>
+            <type>activity</type>
+            <name>com.amazing_create.android.andcliplib.activity.CreateRegistItemDialog</name>
+            <RequiredPermissions/>
+            <IntentFilter/>
+            <PropagatedPermissions/>
+        </Component>
+        <Component>
+            <type>activity</type>
+            <name>com.amazing_create.android.andcliplib.activity.ViewHistoryActivity</name>
+            <RequiredPermissions/>
+            <IntentFilter/>
+            <PropagatedPermissions/>
+        </Component>
+        <Component>
+            <type>activity</type>
+            <name>com.amazing_create.android.andcliplib.activity.ViewRegistActivity</name>
+            <RequiredPermissions/>
+            <IntentFilter/>
+            <PropagatedPermissions/>
+        </Component>
+        <Component>
+            <type>activity</type>
+            <name>com.amazing_create.android.andcliplib.activity.ReplaceActivity</name>
+            <RequiredPermissions/>
+            <IntentFilter/>
+            <PropagatedPermissions/>
+        </Component>
+        <Component>
+            <type>activity</type>
+            <name>com.amazing_create.android.andclipfree.MainPreference</name>
+            <RequiredPermissions/>
+            <IntentFilter/>
+            <PropagatedPermissions/>
+        </Component>
+        <Component>
+            <type>activity</type>
+            <name>com.amazing_create.android.andclipfree.SearchResult</name>
+            <RequiredPermissions/>
+            <IntentFilter>
+                <filter>
+                    <actions>android.intent.action.SEARCH</actions>
+                    <categories>android.intent.category.DEFAULT</categories>
+                    <pathData></pathData>
+                </filter>
+            </IntentFilter>
+            <PropagatedPermissions/>
+        </Component>
+        <Component>
+            <type>activity</type>
+            <name>com.google.ads.AdActivity</name>
+            <RequiredPermissions/>
+            <IntentFilter/>
+            <PropagatedPermissions/>
+        </Component>
+        <Component>
+            <type>service</type>
+            <name>service.ClipWatchService</name>
+            <RequiredPermissions/>
+            <IntentFilter>
+                <filter>
+                    <actions>com.amazing_create.android.andclipfree.service.IClipWatchService</actions>
+                    <pathData></pathData>
+                </filter>
+            </IntentFilter>
+            <PropagatedPermissions/>
+        </Component>
+        <Component>
+            <type>service</type>
+            <name>service.SearchBindService</name>
+            <RequiredPermissions/>
+            <IntentFilter>
+                <filter>
+                    <actions>com.amazing_create.android.andclipfree.service.ISearchBindService</actions>
+                    <pathData></pathData>
+                </filter>
+            </IntentFilter>
+            <PropagatedPermissions/>
+        </Component>
+        <Component>
+            <type>receiver</type>
+            <name>com.amazing_create.android.andclipfree.BootReceiver</name>
+            <RequiredPermissions/>
+            <IntentFilter>
+                <filter>
+                    <actions>android.intent.action.BOOT_COMPLETED</actions>
+                    <pathData></pathData>
+                </filter>
+            </IntentFilter>
+            <PropagatedPermissions/>
+        </Component>
+        <Component>
+            <type>provider</type>
+            <name>provider.SearchSuggestProvider</name>
+            <RequiredPermissions/>
+            <IntentFilter/>
+            <PropagatedPermissions/>
+        </Component>
+    </components>
+    <newIntents>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.activity.k: void onClick(android.view.View)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.activity.k</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>setResult</consumerMethod>
+            <id>2nr0b242b0f946rcv2039rrot6</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.ak: boolean onOptionsItemSelected(android.view.MenuItem)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.ak</sender>
+            <component></component>
+            <action>&quot;org.openintents.action.PICK_FILE&quot;</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>l3r1m1s2qmqob19f93vuovii1g</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.preference.PrefDisplay: boolean onPreferenceClick(android.preference.Preference)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.preference.PrefDisplay</sender>
+            <component></component>
+            <action>&quot;org.openintents.action.PICK_FILE&quot;</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>u4i1u3411aet9t4l3ifmsksanc</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.MainActivity: void a(java.lang.String)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.MainActivity</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>setResult</consumerMethod>
+            <id>5bjhubh5mcu99vpbmjthgtiulq</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.MainActivity: void a(java.lang.String)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.MainActivity</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>setResult</consumerMethod>
+            <id>6mampav9ragic51eiggi39iu29</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.service.SearchBindService: android.os.IBinder onBind(android.content.Intent)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.service.SearchBindService</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.content.Intent: java.lang.String getAction()&gt;</sink>
+                    <sinkCalledAt>&lt;com.amazing_create.android.andclipfree.service.SearchBindService: android.os.IBinder onBind(android.content.Intent)&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;com.amazing_create.android.andclipfree.service.SearchBindService: android.os.IBinder onBind(android.content.Intent)&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>n4phso2t2e1c8skgro1m3ln2jf</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.c: void onServiceConnected(android.content.ComponentName,android.os.IBinder)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.c</sender>
+            <component>com.amazing_create.android.andclipfree.service.ClipWatchService</component>
+            <action>&quot;ClipWatch StartService&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>u02njimo3ion0v0sfattrmocv8</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.BootReceiver: void onReceive(android.content.Context,android.content.Intent)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.BootReceiver</sender>
+            <component>com.amazing_create.android.andclipfree.service.ClipWatchService</component>
+            <action>&quot;android.intent.action.BOOT_COMPLETED&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>cdtsqsa3v3t1mrqhem1121e4en</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.common.g: void b(android.content.Context,java.lang.String)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.common.g</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>ftl6s0lhp09pu3o80oarqa818n</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.av: void a(android.content.Intent,int)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.av</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>2c9gtc6tcubs3j90h9j9bjui3i</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.activity.EditHistoryDialog: void a(int,android.os.Bundle,int)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.activity.EditHistoryDialog</sender>
+            <component>com.amazing_create.android.andcliplib.activity.ReplaceActivity</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>iqj28j4s57opbghsdjb82m3jcn</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.activity.k: void onClick(android.view.View)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.activity.k</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>setResult</consumerMethod>
+            <id>377a60hctdfq05b59girdfu67d</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.d: void a(java.lang.String)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.d</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.os.Handler: boolean sendMessage(android.os.Message)&gt;</sink>
+                    <sinkCalledAt>&lt;com.amazing_create.android.andclipfree.d: void a(java.lang.String)&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;com.amazing_create.android.andclipfree.d: void a(java.lang.String)&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NETWORK</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>2nkl1k2nuhutkqeaugtfc8h7ln</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.MainActivity: void onCreate(android.os.Bundle)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.MainActivity</sender>
+            <component>com.amazing_create.android.andclipfree.service.ClipWatchService</component>
+            <action>&quot;Show Status Bar&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>te7m7j6fcsuqea92dho7s5kvcu</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.v: boolean onOptionsItemSelected(android.view.MenuItem)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.v</sender>
+            <component></component>
+            <action>&quot;org.openintents.action.PICK_FILE&quot;</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>2n66f71fadi292cj0is8447asf</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.ak: void a(int,android.os.Bundle,int)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.ak</sender>
+            <component>com.amazing_create.android.andcliplib.activity.PasswordActivity</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>k9k1aehisrjh4t4oev0t52i7v2</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.BootReceiver: void onReceive(android.content.Context,android.content.Intent)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.BootReceiver</sender>
+            <component>com.amazing_create.android.andclipfree.service.ClipWatchService</component>
+            <action>&quot;android.intent.action.BOOT_COMPLETED&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>hdused6cotb4jhs8kdiq9puiov</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.u: void a(int,android.os.Bundle,int,java.lang.String)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.u</sender>
+            <component></component>
+            <action>&quot;android.intent.action.VIEW&quot;</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>onus3vb19a9d87akef385qiicv</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.activity.TextSearchActivity: void onResume()</calledAt>
+            <sender>com.amazing_create.android.andcliplib.activity.TextSearchActivity</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>uu9j8m46i17cvgtu84j1jj6fc6</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.service.ClipWatchService: android.os.IBinder onBind(android.content.Intent)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.service.ClipWatchService</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.content.Intent: java.lang.String getAction()&gt;</sink>
+                    <sinkCalledAt>&lt;com.amazing_create.android.andclipfree.service.ClipWatchService: android.os.IBinder onBind(android.content.Intent)&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;com.amazing_create.android.andclipfree.service.ClipWatchService: android.os.IBinder onBind(android.content.Intent)&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>9o1cgjs9niu7nt14u786pcq2re</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.preference.PrefDisplay: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.preference.PrefDisplay</sender>
+            <component>com.amazing_create.android.andcliplib.preference.PrefDisplay</component>
+            <action>&quot;Show Status Bar&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>g5eqicb0lv2mn86m1mdrcqv685</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.ak: void a(int,android.os.Bundle,int)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.ak</sender>
+            <component>com.amazing_create.android.andcliplib.activity.PasswordActivity</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>9klhu4p361jbu3eh0ceb9bpivk</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.SearchResult: void b(java.lang.String)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.SearchResult</sender>
+            <component>com.amazing_create.android.andclipfree.service.SearchBindService</component>
+            <action>&quot;SearchBind Replace Text&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>guikrrrvas0sp373k4shmbp1q0</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.e: void a(java.lang.String)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.e</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.os.Handler: boolean sendMessage(android.os.Message)&gt;</sink>
+                    <sinkCalledAt>&lt;com.amazing_create.android.andclipfree.e: void a(java.lang.String)&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;com.amazing_create.android.andclipfree.e: void a(java.lang.String)&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NETWORK</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>4kjjvndfe2if4folpcbu8ivnvk</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.e: void a(java.lang.String)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.e</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.os.Handler: boolean sendMessage(android.os.Message)&gt;</sink>
+                    <sinkCalledAt>&lt;com.amazing_create.android.andclipfree.e: void a(java.lang.String)&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;com.amazing_create.android.andclipfree.e: void a(java.lang.String)&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NETWORK</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>nif98adpbaln92bf65hpepmvjs</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.MainActivity</sender>
+            <component>com.amazing_create.android.andclipfree.service.SearchBindService</component>
+            <action>&quot;SearchBind Stop Service&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>9j7s8jtj654ibpatlk2ru954md</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.ak: void a(int,android.os.Bundle,int)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.ak</sender>
+            <component>com.amazing_create.android.andcliplib.activity.EditRegistDialog</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>1v1thn293ho3epm9pgcbvsbhbh</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.MainActivity</sender>
+            <component>com.amazing_create.android.andclipfree.MainPreference</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>fomj3d4kmkqja7fr4p4m66f3nd</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.activity.g: void onClick(android.view.View)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.activity.g</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>setResult</consumerMethod>
+            <id>9urplspdh62ulb83kko7d3h8g4</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.d: void a(java.lang.String)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.d</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.os.Handler: boolean sendMessage(android.os.Message)&gt;</sink>
+                    <sinkCalledAt>&lt;com.amazing_create.android.andclipfree.d: void a(java.lang.String)&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;com.amazing_create.android.andclipfree.d: void a(java.lang.String)&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NETWORK</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>dnt4jc3t02oafroj453m5lb2i5</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.ak: void a(int,android.os.Bundle,int)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.ak</sender>
+            <component>com.amazing_create.android.andcliplib.activity.EditRegistDialog</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>ukbtuq9spipe5sfrr5pief1p9o</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.preference.PrefDisplay: boolean onPreferenceClick(android.preference.Preference)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.preference.PrefDisplay</sender>
+            <component></component>
+            <action>&quot;org.openintents.action.PICK_FILE&quot;</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>pj6echh5caee4qcdg3oj8v56ua</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.MainActivity: void a(java.lang.String)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.MainActivity</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>setResult</consumerMethod>
+            <id>7um2d3k47hu41otp0r97ah0ft0</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.MainActivity: boolean onKeyLongPress(int,android.view.KeyEvent)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.MainActivity</sender>
+            <component>com.amazing_create.android.andclipfree.service.ClipWatchService</component>
+            <action>&quot;Clipboard Clear&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>vquldjhe7g1hmga2rq4e385u4r</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.ak: void a(int,android.os.Bundle,int)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.ak</sender>
+            <component>com.amazing_create.android.andcliplib.activity.EditRegistDialog</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>tt675gki3ftvvfs2lqa42d9pje</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.MainActivity: void onCreate(android.os.Bundle)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.MainActivity</sender>
+            <component></component>
+            <action>hasValue</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>bindService</consumerMethod>
+            <id>jcfn5b215pontr31ktc1phlfec</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.activity.TextSearchActivity: void onResume()</calledAt>
+            <sender>com.amazing_create.android.andcliplib.activity.TextSearchActivity</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>s5ldo33461n7thok7rs1ucc6hg</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.activity.EditRegistDialog: void a(int,android.os.Bundle,int)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.activity.EditRegistDialog</sender>
+            <component>com.amazing_create.android.andcliplib.activity.ReplaceActivity</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>o70ns81puk7jqbj81pk1snb6ku</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.activity.o: void onClick(android.view.View)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.activity.o</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>setResult</consumerMethod>
+            <id>75gvsvbpre0i016emhnshgft7o</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.MainActivity: void onCreate(android.os.Bundle)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.MainActivity</sender>
+            <component></component>
+            <action>hasValue</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>bindService</consumerMethod>
+            <id>b6fhbnf1cltmhr0gpu4d5t7lek</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.preference.PrefDisplay: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.preference.PrefDisplay</sender>
+            <component>com.amazing_create.android.andcliplib.preference.PrefDisplay</component>
+            <action>&quot;Show Status Bar&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>11hofvojhlu5od8she2o9of9n7</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.preference.PrefDisplay: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.preference.PrefDisplay</sender>
+            <component>com.amazing_create.android.andcliplib.preference.PrefDisplay</component>
+            <action>&quot;Show Status Bar&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>odtpntj1oh6gkqqb29hfq6i17b</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.v: void a(int,android.os.Bundle,int)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.v</sender>
+            <component>com.amazing_create.android.andcliplib.activity.EditHistoryDialog</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>thhrg2u1eecqrgl0vtih35oe2k</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.activity.a: void onClick(android.view.View)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.activity.a</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>setResult</consumerMethod>
+            <id>vd7q0o1took7rh32j5ahodabg2</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.MainActivity: boolean onKeyLongPress(int,android.view.KeyEvent)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.MainActivity</sender>
+            <component>com.amazing_create.android.andclipfree.service.ClipWatchService</component>
+            <action>&quot;Clipboard Clear&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>h2r39snndd5kfrstfnrrh3isf0</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.preference.PrefDisplay: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.preference.PrefDisplay</sender>
+            <component>com.amazing_create.android.andcliplib.preference.PrefDisplay</component>
+            <action>&quot;Show Status Bar&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>tj8504bt6dbi8u4f9gmuoh5dod</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.service.ClipWatchService: android.os.IBinder onBind(android.content.Intent)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.service.ClipWatchService</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;java.lang.Class: java.lang.String getName()&gt;</sink>
+                    <sinkCalledAt>&lt;com.amazing_create.android.andclipfree.service.ClipWatchService: android.os.IBinder onBind(android.content.Intent)&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;com.amazing_create.android.andclipfree.service.ClipWatchService: android.os.IBinder onBind(android.content.Intent)&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>qrrsrn0qo1mr7iomjc4qggtvjm</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.activity.c: void onClick(android.view.View)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.activity.c</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>setResult</consumerMethod>
+            <id>ih4r566rp1pj5truclfossn814</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.activity.a: void onClick(android.view.View)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.activity.a</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>setResult</consumerMethod>
+            <id>592gmb0q6d0g5uie8f2em5bem8</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.ak: boolean onOptionsItemSelected(android.view.MenuItem)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.ak</sender>
+            <component></component>
+            <action>&quot;org.openintents.action.PICK_FILE&quot;</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>2aqj43kin7elv5mg8d1p2usnfv</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.MainActivity: void a(java.lang.String)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.MainActivity</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>setResult</consumerMethod>
+            <id>vv5ivj7q96grplr2q0sv2ml5lt</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.v: boolean onOptionsItemSelected(android.view.MenuItem)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.v</sender>
+            <component></component>
+            <action>&quot;org.openintents.action.PICK_FILE&quot;</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>fvhhhb23a8j67aoaiuegom66fb</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.MainActivity: void onCreate(android.os.Bundle)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.MainActivity</sender>
+            <component></component>
+            <action>hasValue</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>bindService</consumerMethod>
+            <id>oivh4aatq9h7ehrivdum4o2qda</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.SearchResult: void b(java.lang.String)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.SearchResult</sender>
+            <component>com.amazing_create.android.andclipfree.service.SearchBindService</component>
+            <action>&quot;SearchBind Replace Text&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>2t0nj96a2i6htfar8kms225cqu</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.ak: void a(int,android.os.Bundle,int)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.ak</sender>
+            <component>com.amazing_create.android.andcliplib.activity.ViewRegistActivity</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>k7le8bpo7eecrf73ce3h5fvijn</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.MainActivity</sender>
+            <component>com.amazing_create.android.andclipfree.service.ClipWatchService</component>
+            <action>&quot;ClipWatch Stop Service&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>bu6dt7j7lcobhes29s8vusjj8u</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.ak: void a(int,android.os.Bundle,int)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.ak</sender>
+            <component>com.amazing_create.android.andcliplib.activity.ViewRegistActivity</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>75bhm7b5rifb1vjdr55p8vagce</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.service.ClipWatchService: android.os.IBinder onBind(android.content.Intent)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.service.ClipWatchService</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;java.lang.Class: java.lang.String getName()&gt;</sink>
+                    <sinkCalledAt>&lt;com.amazing_create.android.andclipfree.service.ClipWatchService: android.os.IBinder onBind(android.content.Intent)&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;com.amazing_create.android.andclipfree.service.ClipWatchService: android.os.IBinder onBind(android.content.Intent)&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>dqb8dg2ptn9srca8r0gt0iaqmc</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.preference.PrefDisplay: boolean onPreferenceClick(android.preference.Preference)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.preference.PrefDisplay</sender>
+            <component></component>
+            <action>&quot;org.openintents.action.PICK_FILE&quot;</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>6edn99m5mf1s8qeccgd6ajbdh4</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.service.SearchBindService: android.os.IBinder onBind(android.content.Intent)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.service.SearchBindService</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;java.lang.Class: java.lang.String getName()&gt;</sink>
+                    <sinkCalledAt>&lt;com.amazing_create.android.andclipfree.service.SearchBindService: android.os.IBinder onBind(android.content.Intent)&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;com.amazing_create.android.andclipfree.service.SearchBindService: android.os.IBinder onBind(android.content.Intent)&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>j6456ije3rca96bk4fl3re4dbm</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.v: boolean onOptionsItemSelected(android.view.MenuItem)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.v</sender>
+            <component></component>
+            <action>&quot;org.openintents.action.PICK_FILE&quot;</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>thjkio4cgkm4dd2j7l13rt6mra</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.SearchResult: void c(java.lang.String)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.SearchResult</sender>
+            <component>com.amazing_create.android.andclipfree.service.SearchBindService</component>
+            <action>&quot;SearchBind Copy Close&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>1vp2hlbu22psh37v80ka9i0705</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.ak: boolean onOptionsItemSelected(android.view.MenuItem)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.ak</sender>
+            <component>com.amazing_create.android.andcliplib.activity.CreateRegistItemDialog</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>vr1m7i3dauekmoj6p4vjc5pcn4</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.SearchResult: void c(java.lang.String)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.SearchResult</sender>
+            <component>com.amazing_create.android.andclipfree.service.SearchBindService</component>
+            <action>&quot;SearchBind Copy Close&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>uuphct8oaomklk65dj1hltd2dv</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.common.g: void b(android.content.Context,java.lang.String)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.common.g</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>56usir14tl9hpnlbkdo1rdic70</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.ak: void a(int,android.os.Bundle,int)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.ak</sender>
+            <component>com.amazing_create.android.andcliplib.activity.EditRegistDialog</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>4hbu81ob121oi6t2j78u9biops</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.activity.o: void onClick(android.view.View)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.activity.o</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>setResult</consumerMethod>
+            <id>402bp1hko6pgmoo0rad53ek8l1</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.activity.o: void onClick(android.view.View)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.activity.o</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>setResult</consumerMethod>
+            <id>2v529irvj3m56vir7jlqri5d3a</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.u: void a(int,android.os.Bundle,int,java.lang.String)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.u</sender>
+            <component></component>
+            <action>&quot;android.intent.action.VIEW&quot;</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>pqegsatsi76es6creh2ojscofs</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.activity.EditHistoryDialog: void a(int,android.os.Bundle,int)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.activity.EditHistoryDialog</sender>
+            <component>com.amazing_create.android.andcliplib.activity.ReplaceActivity</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>t4sm3pqjref1dsh4q6m20ih7r2</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.SearchResult: void c(java.lang.String)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.SearchResult</sender>
+            <component>com.amazing_create.android.andclipfree.service.SearchBindService</component>
+            <action>&quot;SearchBind Copy Close&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>a0npkot5j2k6ga467qemrdvvf9</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.ak: boolean a(java.lang.String,com.amazing_create.android.andcliplib.data.m,com.amazing_create.android.andcliplib.data.e[])</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.ak</sender>
+            <component>com.amazing_create.android.andcliplib.activity.PasswordActivity</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>lag2j026jgov8s8ho0qdco5gts</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.MainActivity: void onCreate(android.os.Bundle)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.MainActivity</sender>
+            <component></component>
+            <action>hasValue</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>bindService</consumerMethod>
+            <id>4krr0o5urdp33jjm6a8eq64c8n</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.activity.c: void onClick(android.view.View)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.activity.c</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>setResult</consumerMethod>
+            <id>k8r5feisqlukg1baud804018qb</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.v: void a(int,android.os.Bundle,int)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.v</sender>
+            <component>com.amazing_create.android.andcliplib.activity.ViewHistoryActivity</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>erhf9lu12dnr25pjh6osljoi65</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.ak: boolean onOptionsItemSelected(android.view.MenuItem)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.ak</sender>
+            <component></component>
+            <action>&quot;org.openintents.action.PICK_FILE&quot;</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>iaqrnspt5qnt115m2slulqd0sg</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.ak: boolean a(java.lang.String,com.amazing_create.android.andcliplib.data.m,com.amazing_create.android.andcliplib.data.e[])</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.ak</sender>
+            <component>com.amazing_create.android.andcliplib.activity.PasswordActivity</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>raj5doc8qi60ojolqdibdcuv6d</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.ak: boolean onOptionsItemSelected(android.view.MenuItem)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.ak</sender>
+            <component>com.amazing_create.android.andcliplib.activity.CreateRegistItemDialog</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>tcf5bm8ghhbstjkom7tc7qjrv1</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.u: void a(int,android.os.Bundle,int,java.lang.String)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.u</sender>
+            <component></component>
+            <action>&quot;android.intent.action.VIEW&quot;</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>s47qr63sljsmacjvh1d27fscfv</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.ak: void a(int,android.os.Bundle,int)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.ak</sender>
+            <component>com.amazing_create.android.andcliplib.activity.ViewRegistActivity</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>nhhpe7do5js6d472oq4bgo1afh</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.MainActivity</sender>
+            <component>com.amazing_create.android.andclipfree.service.SearchBindService</component>
+            <action>&quot;SearchBind Stop Service&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>4k9177qcg4svpe20fc3vi0anet</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.service.SearchBindService: android.os.IBinder onBind(android.content.Intent)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.service.SearchBindService</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.content.Intent: java.lang.String getAction()&gt;</sink>
+                    <sinkCalledAt>&lt;com.amazing_create.android.andclipfree.service.SearchBindService: android.os.IBinder onBind(android.content.Intent)&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;com.amazing_create.android.andclipfree.service.SearchBindService: android.os.IBinder onBind(android.content.Intent)&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>9c5m3jlusu4vr5n41ts68f2bng</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.v: void a(int,android.os.Bundle,int)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.v</sender>
+            <component>com.amazing_create.android.andcliplib.activity.EditHistoryDialog</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>p01f5r4cn756g5mbj2e7ovjjea</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.av: void a(android.content.Intent,int)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.av</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>uva780j6pfplg4cr5vomeiknsl</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.activity.EditHistoryDialog: void a(int,android.os.Bundle,int)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.activity.EditHistoryDialog</sender>
+            <component>com.amazing_create.android.andcliplib.activity.ReplaceActivity</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>fpkmve6ljfeiqglsics59eq6s5</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.SearchResult: void b(java.lang.String)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.SearchResult</sender>
+            <component>com.amazing_create.android.andclipfree.service.SearchBindService</component>
+            <action>&quot;SearchBind Replace Text&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>cqgis0hqjfr2f1j77svihpje5m</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.ak: boolean a(java.lang.String,com.amazing_create.android.andcliplib.data.m,com.amazing_create.android.andcliplib.data.e[])</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.ak</sender>
+            <component>com.amazing_create.android.andcliplib.activity.PasswordActivity</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>3acf8llkav4hnbs9ha4m2iugfu</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.MainActivity: void onCreate(android.os.Bundle)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.MainActivity</sender>
+            <component></component>
+            <action>hasValue</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>bindService</consumerMethod>
+            <id>tfg3ohm1qrvsd1kjj6fjkbv997</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.v: void a(int,android.os.Bundle,int)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.v</sender>
+            <component>com.amazing_create.android.andcliplib.activity.ViewHistoryActivity</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>rki5672eudfqhl4bnngo5j9sar</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.activity.a: void onClick(android.view.View)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.activity.a</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>setResult</consumerMethod>
+            <id>q4sqgcao0lcorgd77irbqurrog</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.activity.c: void onClick(android.view.View)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.activity.c</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>setResult</consumerMethod>
+            <id>2ttf6lqjmpa0vqdloc0g7vh6g9</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.activity.g: void onClick(android.view.View)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.activity.g</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>setResult</consumerMethod>
+            <id>v1bvpdt47887v7uausm4o8vacr</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.preference.PrefDisplay: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.preference.PrefDisplay</sender>
+            <component>com.amazing_create.android.andcliplib.preference.PrefDisplay</component>
+            <action>&quot;Show Status Bar&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>1g74g8of6jo96691607s50t1rc</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.activity.TextSearchActivity: void onResume()</calledAt>
+            <sender>com.amazing_create.android.andcliplib.activity.TextSearchActivity</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>v590dffl56tt9gnvrb6cpsvlbi</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.SearchResult: void b(java.lang.String)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.SearchResult</sender>
+            <component>com.amazing_create.android.andclipfree.service.SearchBindService</component>
+            <action>&quot;SearchBind Replace Text&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>gm63p97s53ldeu0hvirii62n7l</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.ak: void a(int,android.os.Bundle,int)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.ak</sender>
+            <component>com.amazing_create.android.andcliplib.activity.ViewRegistActivity</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>gj9141hj0b0ubuu1buu1cr4m0o</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.u: void a(int,android.os.Bundle,int,java.lang.String)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.u</sender>
+            <component></component>
+            <action>&quot;android.intent.action.VIEW&quot;</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>l6gje6f23hsqs56t5tkfjoe3tv</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.common.g: void b(android.content.Context,java.lang.String)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.common.g</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>rtm5sge4barqn60biuh6cthueb</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.activity.g: void onClick(android.view.View)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.activity.g</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>setResult</consumerMethod>
+            <id>sj5kivufnuf1t5csoktd254p6e</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.ak: boolean onOptionsItemSelected(android.view.MenuItem)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.ak</sender>
+            <component></component>
+            <action>&quot;org.openintents.action.PICK_FILE&quot;</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>2q0mj0f5q25qofoovk2ai14v16</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.service.SearchBindService: android.os.IBinder onBind(android.content.Intent)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.service.SearchBindService</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.content.Intent: java.lang.String getAction()&gt;</sink>
+                    <sinkCalledAt>&lt;com.amazing_create.android.andclipfree.service.SearchBindService: android.os.IBinder onBind(android.content.Intent)&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;com.amazing_create.android.andclipfree.service.SearchBindService: android.os.IBinder onBind(android.content.Intent)&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>77mmgta3d0dq2b0qc4t543kc31</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.MainActivity: void onCreate(android.os.Bundle)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.MainActivity</sender>
+            <component></component>
+            <action>hasValue</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>bindService</consumerMethod>
+            <id>60ieofb88od9ljeaoc1ukdc9qa</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.common.g: void a(android.content.Context,java.lang.Class,java.lang.String)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.common.g</sender>
+            <component>com.amazing_create.android.andcliplib.common.g</component>
+            <action>&quot;Hidden Copy&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>o8hm8u7g04a96j6144tsq6oak6</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.service.ClipWatchService: android.os.IBinder onBind(android.content.Intent)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.service.ClipWatchService</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.content.Intent: java.lang.String getAction()&gt;</sink>
+                    <sinkCalledAt>&lt;com.amazing_create.android.andclipfree.service.ClipWatchService: android.os.IBinder onBind(android.content.Intent)&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;com.amazing_create.android.andclipfree.service.ClipWatchService: android.os.IBinder onBind(android.content.Intent)&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>6d6q34kek1t1olfog4d96cgb72</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.ak: void a(int,android.os.Bundle,int)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.ak</sender>
+            <component>com.amazing_create.android.andcliplib.activity.PasswordActivity</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>fqqj10bvto1kvhjim4ol7v6tus</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.service.ClipWatchService: android.os.IBinder onBind(android.content.Intent)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.service.ClipWatchService</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;java.lang.Class: java.lang.String getName()&gt;</sink>
+                    <sinkCalledAt>&lt;com.amazing_create.android.andclipfree.service.ClipWatchService: android.os.IBinder onBind(android.content.Intent)&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;com.amazing_create.android.andclipfree.service.ClipWatchService: android.os.IBinder onBind(android.content.Intent)&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>4buuisk10pclqj857j7ekqkkk9</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.service.SearchBindService: android.os.IBinder onBind(android.content.Intent)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.service.SearchBindService</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.content.Intent: java.lang.String getAction()&gt;</sink>
+                    <sinkCalledAt>&lt;com.amazing_create.android.andclipfree.service.SearchBindService: android.os.IBinder onBind(android.content.Intent)&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;com.amazing_create.android.andclipfree.service.SearchBindService: android.os.IBinder onBind(android.content.Intent)&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>6648hkbte7ea0m4hev5nnecoo8</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.activity.k: void onClick(android.view.View)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.activity.k</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>setResult</consumerMethod>
+            <id>44r29fbnf52f3cdvakodjckr9f</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.MainActivity: void onCreate(android.os.Bundle)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.MainActivity</sender>
+            <component></component>
+            <action>hasValue</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>bindService</consumerMethod>
+            <id>gbhpdbprc7ua66kts2a1ue07up</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.service.ClipWatchService: android.os.IBinder onBind(android.content.Intent)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.service.ClipWatchService</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;java.lang.Class: java.lang.String getName()&gt;</sink>
+                    <sinkCalledAt>&lt;com.amazing_create.android.andclipfree.service.ClipWatchService: android.os.IBinder onBind(android.content.Intent)&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;com.amazing_create.android.andclipfree.service.ClipWatchService: android.os.IBinder onBind(android.content.Intent)&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>m3g3ituv92djld91t276tis374</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.v: void a(int,android.os.Bundle,int)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.v</sender>
+            <component>com.amazing_create.android.andcliplib.activity.ViewHistoryActivity</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>vbamqp936b0ii0vs1263tdgcqc</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.MainActivity: boolean onKeyLongPress(int,android.view.KeyEvent)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.MainActivity</sender>
+            <component>com.amazing_create.android.andclipfree.service.ClipWatchService</component>
+            <action>&quot;Clipboard Clear&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>h5kt82leg5gtn2ct0b8f94fjaa</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.activity.k: void onClick(android.view.View)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.activity.k</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>setResult</consumerMethod>
+            <id>mit06nt7mprapge04h88lbaku1</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.MainActivity</sender>
+            <component>com.amazing_create.android.andclipfree.service.SearchBindService</component>
+            <action>&quot;SearchBind Stop Service&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>k0s1tvrcinuk75ndumcq5m0fi9</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.MainActivity: boolean onKeyLongPress(int,android.view.KeyEvent)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.MainActivity</sender>
+            <component>com.amazing_create.android.andclipfree.service.ClipWatchService</component>
+            <action>&quot;Clipboard Clear&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>unbtmgmpchh3r39m75sltkndvn</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.common.g: void b(android.content.Context,java.lang.String)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.common.g</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>118sdvooacod8je8cf3aeec3va</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.common.g: void a(android.content.Context,java.lang.Class,java.lang.String)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.common.g</sender>
+            <component>com.amazing_create.android.andcliplib.common.g</component>
+            <action>&quot;Hidden Copy&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>t3sgc24rq6au4e6mommkdl6js2</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.MainActivity</sender>
+            <component>com.amazing_create.android.andclipfree.service.ClipWatchService</component>
+            <action>&quot;ClipWatch Stop Service&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>i7cadqmn5p62q2au8nb0aum4f9</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.BootReceiver: void onReceive(android.content.Context,android.content.Intent)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.BootReceiver</sender>
+            <component>com.amazing_create.android.andclipfree.service.ClipWatchService</component>
+            <action>&quot;android.intent.action.BOOT_COMPLETED&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>6j735v8vjmh0aqlohg7343nohu</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.MainActivity</sender>
+            <component>com.amazing_create.android.andclipfree.MainPreference</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>1hldv3go4u3angvoejdpbqkgpa</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.activity.EditHistoryDialog: void a(int,android.os.Bundle,int)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.activity.EditHistoryDialog</sender>
+            <component>com.amazing_create.android.andcliplib.activity.ReplaceActivity</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>4pp98q7gc6te8vhvpib27e7ht2</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.preference.PrefDisplay: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.preference.PrefDisplay</sender>
+            <component>com.amazing_create.android.andcliplib.preference.PrefDisplay</component>
+            <action>&quot;Show Status Bar&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>3e21qfdrpqj6ts77r0b8pnj59q</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.activity.EditRegistDialog: void a(int,android.os.Bundle,int)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.activity.EditRegistDialog</sender>
+            <component>com.amazing_create.android.andcliplib.activity.ReplaceActivity</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>dvlbi0jb2dfvae8hv56g3o7tdp</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.v: boolean onOptionsItemSelected(android.view.MenuItem)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.v</sender>
+            <component></component>
+            <action>&quot;org.openintents.action.PICK_FILE&quot;</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>i8sletsfk8r290k701p8vg4jkh</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.d: void a(java.lang.String)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.d</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.os.Handler: boolean sendMessage(android.os.Message)&gt;</sink>
+                    <sinkCalledAt>&lt;com.amazing_create.android.andclipfree.d: void a(java.lang.String)&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;com.amazing_create.android.andclipfree.d: void a(java.lang.String)&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NETWORK</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>lqm8ajlsptbe3amsa05o5u3l55</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.preference.PrefDisplay: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.preference.PrefDisplay</sender>
+            <component>com.amazing_create.android.andcliplib.preference.PrefDisplay</component>
+            <action>&quot;Show Status Bar&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>ab8dmvd917593cd2secl90rd8q</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.ak: boolean a(java.lang.String,com.amazing_create.android.andcliplib.data.m,com.amazing_create.android.andcliplib.data.e[])</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.ak</sender>
+            <component>com.amazing_create.android.andcliplib.activity.PasswordActivity</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>efou74nlf2fiebgbemqieh3blr</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.MainActivity: void onCreate(android.os.Bundle)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.MainActivity</sender>
+            <component></component>
+            <action>hasValue</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>bindService</consumerMethod>
+            <id>q7vfqksp3k35sln16kkc633atb</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.service.ClipWatchService: android.os.IBinder onBind(android.content.Intent)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.service.ClipWatchService</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.content.Intent: java.lang.String getAction()&gt;</sink>
+                    <sinkCalledAt>&lt;com.amazing_create.android.andclipfree.service.ClipWatchService: android.os.IBinder onBind(android.content.Intent)&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;com.amazing_create.android.andclipfree.service.ClipWatchService: android.os.IBinder onBind(android.content.Intent)&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>i4q4jh9ehjbgp8ccnhj92nm0jf</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.MainActivity</sender>
+            <component>com.amazing_create.android.andclipfree.service.ClipWatchService</component>
+            <action>&quot;ClipWatch Stop Service&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>8e383t43nfu952lqmpf9j3ogvc</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.activity.EditRegistDialog: void a(int,android.os.Bundle,int)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.activity.EditRegistDialog</sender>
+            <component>com.amazing_create.android.andcliplib.activity.ReplaceActivity</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>j9un9dp7o9jnok3im1a7ps171</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.service.SearchBindService: android.os.IBinder onBind(android.content.Intent)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.service.SearchBindService</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;java.lang.Class: java.lang.String getName()&gt;</sink>
+                    <sinkCalledAt>&lt;com.amazing_create.android.andclipfree.service.SearchBindService: android.os.IBinder onBind(android.content.Intent)&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;com.amazing_create.android.andclipfree.service.SearchBindService: android.os.IBinder onBind(android.content.Intent)&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>gjsrlon0r276rb01u6qvv4uk8d</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.SearchResult: void c(java.lang.String)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.SearchResult</sender>
+            <component>com.amazing_create.android.andclipfree.service.SearchBindService</component>
+            <action>&quot;SearchBind Copy Close&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>35ummpukg6thp7r7c7371qlthn</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.common.g: void a(android.content.Context,java.lang.Class,java.lang.String)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.common.g</sender>
+            <component>com.amazing_create.android.andcliplib.common.g</component>
+            <action>&quot;Hidden Copy&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>7rel00bcmesoc6kdnugo757dgs</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.c: void onServiceConnected(android.content.ComponentName,android.os.IBinder)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.c</sender>
+            <component>com.amazing_create.android.andclipfree.service.ClipWatchService</component>
+            <action>&quot;ClipWatch StartService&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>45vn8ht0q7971dsflq5icdposu</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.MainActivity</sender>
+            <component>com.amazing_create.android.andclipfree.MainPreference</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>fol4pjh7s8ocffof9b0lncj6ou</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.av: void a(android.content.Intent,int)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.av</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>7s3ub2o49ruaq8m6ba9unatem1</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.service.SearchBindService: android.os.IBinder onBind(android.content.Intent)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.service.SearchBindService</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;java.lang.Class: java.lang.String getName()&gt;</sink>
+                    <sinkCalledAt>&lt;com.amazing_create.android.andclipfree.service.SearchBindService: android.os.IBinder onBind(android.content.Intent)&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;com.amazing_create.android.andclipfree.service.SearchBindService: android.os.IBinder onBind(android.content.Intent)&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>ggs57a2q2atefjp1dou3od84mr</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.v: void a(int,android.os.Bundle,int)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.v</sender>
+            <component>com.amazing_create.android.andcliplib.activity.ViewHistoryActivity</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>u9a6psl6ta2lr4u9ogopfd5j5v</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.activity.o: void onClick(android.view.View)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.activity.o</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>setResult</consumerMethod>
+            <id>ivnv60q15dksb7fb3o4sgc6lfr</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.activity.TextSearchActivity: void onResume()</calledAt>
+            <sender>com.amazing_create.android.andcliplib.activity.TextSearchActivity</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>7jcb4ckvjcssfgv4ns5jqsh23t</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.preference.PrefDisplay: boolean onPreferenceClick(android.preference.Preference)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.preference.PrefDisplay</sender>
+            <component></component>
+            <action>&quot;org.openintents.action.PICK_FILE&quot;</action>
+            <dataType></dataType>
+            <scheme>hasValue</scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>pfah08j7ssplncl480a6t892bk</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.MainActivity: void onCreate(android.os.Bundle)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.MainActivity</sender>
+            <component>com.amazing_create.android.andclipfree.service.ClipWatchService</component>
+            <action>&quot;Show Status Bar&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>67rov6hu2tak29l948g4bi35f7</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.service.ClipWatchService: android.os.IBinder onBind(android.content.Intent)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.service.ClipWatchService</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.content.Intent: java.lang.String getAction()&gt;</sink>
+                    <sinkCalledAt>&lt;com.amazing_create.android.andclipfree.service.ClipWatchService: android.os.IBinder onBind(android.content.Intent)&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;com.amazing_create.android.andclipfree.service.ClipWatchService: android.os.IBinder onBind(android.content.Intent)&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>IPC</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>1bkiboi9csmv700r0s79hilv6q</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.ak: boolean onOptionsItemSelected(android.view.MenuItem)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.ak</sender>
+            <component>com.amazing_create.android.andcliplib.activity.CreateRegistItemDialog</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>lidnomqnjs127e5av9fp883rn1</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.activity.EditRegistDialog: void a(int,android.os.Bundle,int)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.activity.EditRegistDialog</sender>
+            <component>com.amazing_create.android.andcliplib.activity.ReplaceActivity</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>leeke54m4e4b24khc9091lrbp7</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.c: void onServiceConnected(android.content.ComponentName,android.os.IBinder)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.c</sender>
+            <component>com.amazing_create.android.andclipfree.service.ClipWatchService</component>
+            <action>&quot;ClipWatch StartService&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>sbd593rni38o9jseak6gdgukh3</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.MainActivity</sender>
+            <component>com.amazing_create.android.andclipfree.service.ClipWatchService</component>
+            <action>&quot;ClipWatch Stop Service&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>5bmmnvkra35iivtr8ec163mi12</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.d: void a(java.lang.String)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.d</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.os.Handler: boolean sendMessage(android.os.Message)&gt;</sink>
+                    <sinkCalledAt>&lt;com.amazing_create.android.andclipfree.d: void a(java.lang.String)&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;com.amazing_create.android.andclipfree.d: void a(java.lang.String)&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NETWORK</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>u31biq091h39o4r1989vfnrik7</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.ak: boolean onOptionsItemSelected(android.view.MenuItem)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.ak</sender>
+            <component>com.amazing_create.android.andcliplib.activity.CreateRegistItemDialog</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>283ttqnkj7sem01nn8nn70tcbt</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.ak: void a(int,android.os.Bundle,int)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.ak</sender>
+            <component>com.amazing_create.android.andcliplib.activity.PasswordActivity</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>oclmd9blljtbs8bc5qs97ar3lc</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.MainActivity: void onCreate(android.os.Bundle)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.MainActivity</sender>
+            <component>com.amazing_create.android.andclipfree.service.ClipWatchService</component>
+            <action>&quot;Show Status Bar&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>sh7506hei2kfm8o9b7jj37kii0</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.e: void a(java.lang.String)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.e</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.os.Handler: boolean sendMessage(android.os.Message)&gt;</sink>
+                    <sinkCalledAt>&lt;com.amazing_create.android.andclipfree.e: void a(java.lang.String)&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;com.amazing_create.android.andclipfree.e: void a(java.lang.String)&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NETWORK</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>alfqki22id1ncj0h1135u0l4fd</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.e: void a(java.lang.String)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.e</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;android.os.Handler: boolean sendMessage(android.os.Message)&gt;</sink>
+                    <sinkCalledAt>&lt;com.amazing_create.android.andclipfree.e: void a(java.lang.String)&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;com.amazing_create.android.andclipfree.e: void a(java.lang.String)&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NETWORK</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>tq55govtmg2321dmtnicb4l1ub</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.MainActivity</sender>
+            <component>com.amazing_create.android.andclipfree.service.SearchBindService</component>
+            <action>&quot;SearchBind Stop Service&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>22p6kib6b388a21b3lss6d9qcq</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.activity.a: void onClick(android.view.View)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.activity.a</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>setResult</consumerMethod>
+            <id>pgbmktq6108esm75k6ugbpbvvj</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.MainActivity: void onCreate(android.os.Bundle)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.MainActivity</sender>
+            <component>com.amazing_create.android.andclipfree.service.ClipWatchService</component>
+            <action>&quot;Show Status Bar&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>940511b1itiqkei4eumsllpsc9</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.av: void a(android.content.Intent,int)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.av</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>2d690eidp5pepj8724uuj2b20r</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.c: void onServiceConnected(android.content.ComponentName,android.os.IBinder)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.c</sender>
+            <component>com.amazing_create.android.andclipfree.service.ClipWatchService</component>
+            <action>&quot;ClipWatch StartService&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>8090i7ifsb4ker4pcd39cerk08</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.preference.PrefDisplay: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.preference.PrefDisplay</sender>
+            <component>com.amazing_create.android.andcliplib.preference.PrefDisplay</component>
+            <action>&quot;Show Status Bar&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>8gu085rjmbmdv8bu7pq97m39gd</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.activity.g: void onClick(android.view.View)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.activity.g</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>setResult</consumerMethod>
+            <id>90cqqaem3rvpgor2013apf71ej</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.v: void a(int,android.os.Bundle,int)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.v</sender>
+            <component>com.amazing_create.android.andcliplib.activity.EditHistoryDialog</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>7rp4qv60iisndb96b6l7ie5reo</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.activity.c: void onClick(android.view.View)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.activity.c</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>setResult</consumerMethod>
+            <id>fjs5a8tcn3rg2fs3oao5q0ca36</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.MainActivity</sender>
+            <component>com.amazing_create.android.andclipfree.MainPreference</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivity</consumerMethod>
+            <id>ednfje43tjk12inj4ah3g62dm0</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.BootReceiver: void onReceive(android.content.Context,android.content.Intent)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.BootReceiver</sender>
+            <component>com.amazing_create.android.andclipfree.service.ClipWatchService</component>
+            <action>&quot;android.intent.action.BOOT_COMPLETED&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>reoh1nla1788vn9tai3s4nf2hr</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.fragments.v: void a(int,android.os.Bundle,int)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.fragments.v</sender>
+            <component>com.amazing_create.android.andcliplib.activity.EditHistoryDialog</component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startActivityForResult</consumerMethod>
+            <id>rt28gsmvakrdhud1fo3b5mble8</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andclipfree.service.SearchBindService: android.os.IBinder onBind(android.content.Intent)</calledAt>
+            <sender>com.amazing_create.android.andclipfree.service.SearchBindService</sender>
+            <component></component>
+            <action></action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>false</extra>
+            <sensitiveData>false</sensitiveData>
+            <sensitiveFlows>
+                <Flow>
+                    <sink>&lt;java.lang.Class: java.lang.String getName()&gt;</sink>
+                    <sinkCalledAt>&lt;com.amazing_create.android.andclipfree.service.SearchBindService: android.os.IBinder onBind(android.content.Intent)&gt;</sinkCalledAt>
+                    <source>Returned Value</source>
+                    <sourceCalledAt>&lt;com.amazing_create.android.andclipfree.service.SearchBindService: android.os.IBinder onBind(android.content.Intent)&gt;</sourceCalledAt>
+                    <sinkDomain>IPC</sinkDomain>
+                    <sourceDomain>NO_CATEGORY</sourceDomain>
+                </Flow>
+            </sensitiveFlows>
+            <consumerMethod>binder</consumerMethod>
+            <id>mippfa54srm1asd6ks1vah5vkh</id>
+            <random/>
+        </Intent>
+        <Intent>
+            <calledAt>com.amazing_create.android.andcliplib.common.g: void a(android.content.Context,java.lang.Class,java.lang.String)</calledAt>
+            <sender>com.amazing_create.android.andcliplib.common.g</sender>
+            <component>com.amazing_create.android.andcliplib.common.g</component>
+            <action>&quot;Hidden Copy&quot;</action>
+            <dataType></dataType>
+            <scheme></scheme>
+            <extra>true</extra>
+            <sensitiveData>false</sensitiveData>
+            <consumerMethod>startService</consumerMethod>
+            <id>4rl4aqjmh558b40n431kbtukkv</id>
+            <random/>
+        </Intent>
+    </newIntents>
+    <ContentProviders>
+        <ContentProvider>
+            <uris>ANY_URI</uris>
+            <dbMethod>query</dbMethod>
+            <calledAt>com.amazing_create.android.andcliplib.contacts.d: java.util.HashMap d()</calledAt>
+            <exitOrEntry>exit</exitOrEntry>
+        </ContentProvider>
+        <ContentProvider>
+            <uris>ANY_URI</uris>
+            <dbMethod>query</dbMethod>
+            <calledAt>com.amazing_create.android.andcliplib.contacts.c: java.util.ArrayList a(java.lang.String)</calledAt>
+            <exitOrEntry>exit</exitOrEntry>
+        </ContentProvider>
+        <ContentProvider>
+            <uris>ANY_URI</uris>
+            <dbMethod>query</dbMethod>
+            <calledAt>com.amazing_create.android.andcliplib.contacts.d: java.util.ArrayList a(long)</calledAt>
+            <exitOrEntry>exit</exitOrEntry>
+        </ContentProvider>
+        <ContentProvider>
+            <uris>ANY_URI</uris>
+            <dbMethod>query</dbMethod>
+            <calledAt>com.amazing_create.android.andcliplib.bookmark.b: java.util.ArrayList a()</calledAt>
+            <exitOrEntry>exit</exitOrEntry>
+        </ContentProvider>
+        <ContentProvider>
+            <uris>ANY_URI</uris>
+            <dbMethod>query</dbMethod>
+            <calledAt>com.amazing_create.android.andcliplib.contacts.d: java.util.ArrayList a(int,long)</calledAt>
+            <exitOrEntry>exit</exitOrEntry>
+        </ContentProvider>
+        <ContentProvider>
+            <uris>ANY_URI</uris>
+            <dbMethod>query</dbMethod>
+            <calledAt>com.amazing_create.android.andcliplib.contacts.d: java.util.ArrayList b(long)</calledAt>
+            <exitOrEntry>exit</exitOrEntry>
+        </ContentProvider>
+        <ContentProvider>
+            <uris>ANY_URI</uris>
+            <dbMethod>query</dbMethod>
+            <calledAt>com.amazing_create.android.andcliplib.contacts.c: java.util.ArrayList a(java.lang.String)</calledAt>
+            <exitOrEntry>exit</exitOrEntry>
+        </ContentProvider>
+        <ContentProvider>
+            <uris>ANY_URI</uris>
+            <dbMethod>query</dbMethod>
+            <calledAt>com.amazing_create.android.andcliplib.contacts.c: java.util.ArrayList a(long)</calledAt>
+            <exitOrEntry>exit</exitOrEntry>
+        </ContentProvider>
+        <ContentProvider>
+            <uris>ANY_URI</uris>
+            <dbMethod>query</dbMethod>
+            <calledAt>com.amazing_create.android.andcliplib.contacts.c: java.util.ArrayList c(long)</calledAt>
+            <exitOrEntry>exit</exitOrEntry>
+        </ContentProvider>
+        <ContentProvider>
+            <uris>ANY_URI</uris>
+            <dbMethod>query</dbMethod>
+            <calledAt>com.amazing_create.android.andcliplib.contacts.d: java.util.ArrayList a(boolean)</calledAt>
+            <exitOrEntry>exit</exitOrEntry>
+        </ContentProvider>
+        <ContentProvider>
+            <uris>ANY_URI</uris>
+            <dbMethod>query</dbMethod>
+            <calledAt>com.amazing_create.android.andcliplib.contacts.d: java.util.ArrayList c(long)</calledAt>
+            <exitOrEntry>exit</exitOrEntry>
+        </ContentProvider>
+        <ContentProvider>
+            <uris>ANY_URI</uris>
+            <dbMethod>query</dbMethod>
+            <calledAt>com.amazing_create.android.andcliplib.contacts.c: java.util.Map d()</calledAt>
+            <exitOrEntry>exit</exitOrEntry>
+        </ContentProvider>
+        <ContentProvider>
+            <uris>ANY_URI</uris>
+            <dbMethod>query</dbMethod>
+            <calledAt>com.amazing_create.android.andcliplib.bookmark.b: java.util.ArrayList a(java.lang.String)</calledAt>
+            <exitOrEntry>exit</exitOrEntry>
+        </ContentProvider>
+        <ContentProvider>
+            <uris>ANY_URI</uris>
+            <dbMethod>query</dbMethod>
+            <calledAt>com.amazing_create.android.andcliplib.contacts.d: java.util.ArrayList a(java.lang.String)</calledAt>
+            <exitOrEntry>exit</exitOrEntry>
+        </ContentProvider>
+        <ContentProvider>
+            <uris>ANY_URI</uris>
+            <dbMethod>query</dbMethod>
+            <calledAt>com.amazing_create.android.andcliplib.contacts.c: java.util.ArrayList b(long)</calledAt>
+            <exitOrEntry>exit</exitOrEntry>
+        </ContentProvider>
+        <ContentProvider>
+            <uris>ANY_URI</uris>
+            <dbMethod>query</dbMethod>
+            <calledAt>com.amazing_create.android.andcliplib.contacts.c: java.util.ArrayList a(int,long)</calledAt>
+            <exitOrEntry>exit</exitOrEntry>
+        </ContentProvider>
+        <ContentProvider>
+            <uris>ANY_URI</uris>
+            <dbMethod>query</dbMethod>
+            <calledAt>com.amazing_create.android.andcliplib.contacts.c: java.util.ArrayList a(boolean)</calledAt>
+            <exitOrEntry>exit</exitOrEntry>
+        </ContentProvider>
+        <ContentProvider>
+            <uris>ANY_URI</uris>
+            <dbMethod>query</dbMethod>
+            <calledAt>com.amazing_create.android.andcliplib.contacts.d: java.util.ArrayList a(java.lang.String)</calledAt>
+            <exitOrEntry>exit</exitOrEntry>
+        </ContentProvider>
+    </ContentProviders>
+    <usesPermissions>
+        <permission>INTERNET</permission>
+        <permission>ACCESS_NETWORK_STATE</permission>
+        <permission>RECEIVE_BOOT_COMPLETED</permission>
+        <permission>READ_CONTACTS</permission>
+        <permission>READ_EXTERNAL_STORAGE</permission>
+        <permission>WRITE_EXTERNAL_STORAGE</permission>
+    </usesPermissions>
+    <actuallyUsesPermissions/>
+    <requiredPermissions/>
+    <apkFile>../../../app_repo/APKs/aNdClip Free - Clipboard ext -_3.2.4_apk-dl.com.apk</apkFile>
+    <name>aNdClip Free - Clipboard ext -_3_2_4_apk-dl_com</name>
+</application>
