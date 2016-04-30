@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<analysisReport>
+    <name>CatDogToe</name>
+    <apps/>
+    <vulnerabilities>
+        <vulnerability>
+            <type>Intent Spoofing</type>
+            <description>App com.savva.TicaTacToe puts data (retrieved from an Explicit Intent (Component = UploadService)) on an unsafe sink (LOG) in one of its components (com.savva.TicaTacToe.UploadService). A malicious app can send a sensitive data from this channel.</description>
+            <vulnerabilityElements>
+                <type>APP</type>
+                <description>com.savva.TicaTacToe</description>
+                <element>
+                    <type>COMPONENT</type>
+                    <description>com.savva.TicaTacToe.UploadService</description>
+                    <element>
+                        <type>INTENT</type>
+                        <description>Explicit Intent (Component = UploadService)</description>
+                        <alloyLabel>i2</alloyLabel>
+                    </element>
+                    <element>
+                        <type>METHOD</type>
+                        <description>com.savva.TicaTacToe.UploadService: int onStartCommand(android.content.Intent,int,int)</description>
+                        <element>
+                            <type>SINK_TYPE</type>
+                            <description>LOG</description>
+                            <alloyLabel>dComponent</alloyLabel>
+                        </element>
+                        <alloyLabel>dComponent</alloyLabel>
+                    </element>
+                    <alloyLabel>c2</alloyLabel>
+                </element>
+                <alloyLabel>c2</alloyLabel>
+            </vulnerabilityElements>
+        </vulnerability>
+    </vulnerabilities>
+</analysisReport>

@@ -1,4 +1,5 @@
 <html><body>
+  <h1> Overall architecture:</h1>
   <form action="exec.php" method="get">
     <input type="submit" name="send" value="COVERT">
     <input type="submit" name="send" value="IccTA">
@@ -6,7 +7,7 @@
   </form>
 
 <?php
-
+  
 // Clean tmp directory "./files/"
 shell_exec("rm files/*");
 
@@ -24,6 +25,9 @@ if (is_uploaded_file($_FILES["upfile"]["tmp_name"])) {
 //<!--$fileName = $_FILES["upfile"]["name"];-->
 //<!--$output = shell_exec('scripts/exec.sh '.escapeshellarg($fileName).' aaa');-->
 //<!--echo $output;-->
+
+include("./tats_hw3.html");
+
 ?>
 
 </body>

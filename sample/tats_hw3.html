@@ -22,7 +22,7 @@
 
 </style>
 <body>
-<h1>Tats's HW3</h1>
+<!--<h1>Tats's HW3</h1>-->
 <!--TODO: How can I use relative path? -->
 <!--<script type="text/javascript" src="d3/d3.min.js"></script>-->
 <script type="text/javascript" src="https://csci578-project-tomitatsu.c9users.io/tats/d3/d3.min.js"></script>
@@ -48,7 +48,8 @@ var svg = d3.select("body").append("svg")
 
 // TODO
 //   d3.json("output_org/merge.json", function(error, graph) {
-  d3.json("https://csci578-project-tomitatsu.c9users.io/tats/output_org/merge.json", function(error, graph) {
+  // d3.json("https://csci578-project-tomitatsu.c9users.io/tats/output_org/merge.json", function(error, graph) {
+  d3.json("https://csci578-project-tomitatsu.c9users.io/scripts/output/merge.json", function(error, graph) {
   if (error) throw error;
 
   force
