@@ -155,9 +155,9 @@ toolImage = toolImage.data(graph.links).enter().append("image")
 .attr("xlink:href",function(d) {
 
 	if (d.dataFlow){
-		return "dataFlow.png"
+		return "./image/dataFlow.png"
 	}else{
-		return d.byTool+".png"	
+		return "./image/"+d.byTool+".png"	
 	}
 	
 
