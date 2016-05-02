@@ -60,7 +60,7 @@ var bubbleRadius = 10;
 let bubbleOffSet = (nodeRadius+bubbleRadius)/Math.sqrt(2);	
 
 let lineOffSet = 35;
-
+let curvedLevel = [-100,100][Math.floor(Math.random()*2)];
 
 d3.json("graph.json", function(error, graph) {
 
@@ -141,7 +141,7 @@ link = link.data(graph.links).enter().append("path")
 	}
 })
 .attr("d", function(d) {
-    return draw_curve(d.source.x, d.source.y, d.target.x, d.target.y, -50);
+    return draw_curve(d.source.x, d.source.y, d.target.x, d.target.y, curvedLevel);
  })
 .attr("fill","transparent")
 .attr("x1", function(d) { return d.source.x})
@@ -214,13 +214,13 @@ function nudge(dx, dy) {
 	// Link  - from point
 	link.filter(function(d) { return d.source.selected; })
 	.attr("d", function(d) {
-	    return draw_curve(d.source.x, d.source.y, d.target.x, d.target.y, -50);
+	    return draw_curve(d.source.x, d.source.y, d.target.x, d.target.y, curvedLevel);
 	 })
 
 	// Link - to point 
 	link.filter(function(d) { return d.target.selected; })
 	.attr("d", function(d) {
-	    return draw_curve(d.source.x, d.source.y, d.target.x, d.target.y, -50);
+	    return draw_curve(d.source.x, d.source.y, d.target.x, d.target.y, curvedLevel);
 	 })
 
 	// toolImage
@@ -257,7 +257,7 @@ shiftKey = d3.event.shiftKey || d3.event.metaKey;
 }
 
 function randomColor(){
-var index = Math.floor((Math.random() * colorArray.length) + 1);
+var index = Math.floor((Math.random() * colorArray.length));
 return colorArray[index];
 
 }
