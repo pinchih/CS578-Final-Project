@@ -7,7 +7,7 @@ var colorArray = ["#819090","#708284","#536870",
 "#434090","#E06E6E","#F1A7A2",
 "#A2F1A7","#D67DA9","#10971B"];
 
-var width = screen.width,
+var width = "100%",
 height = 800,
 shiftKey;
 
@@ -22,7 +22,7 @@ var svg = d3.select("#graph")
 
 svg.append("defs").append("marker")
 .attr("id", "arrowhead")
-.attr("refX", 19) /*must be smarter way to calculate shift*/
+.attr("refX", 15) /*must be smarter way to calculate shift*/
 .attr("refY", 2)	
 .attr("fill","gray")
 .attr("markerWidth", 6)
@@ -54,8 +54,8 @@ var pathInfo = d3.select("body").append("div")
 
 var toolImage = svg.selectAll("image"); 
 
-var offSet = 40;
-var nodeRadius = 40;
+var offSet = 30;
+var nodeRadius = 30;
 var bubbleRadius = 10;
 let bubbleOffSet = (nodeRadius+bubbleRadius)/Math.sqrt(2);	
 
@@ -86,8 +86,7 @@ d3.json("graph.json", function(error, graph) {
 			temp = temp + permissions[i] + "<br/>"							
 		}
 
-		intentDiv.transition()		
-		.duration(200)		
+		intentDiv.transition()			
 		.style("opacity", .9);
 
 		intentDiv .html(temp)
@@ -98,8 +97,7 @@ d3.json("graph.json", function(error, graph) {
 
 	.on("mouseout", function(d) {
 
-		intentDiv.transition()		
-		.duration(500)		
+		intentDiv.transition()			
 		.style("opacity", 0);
 
 	})
@@ -123,8 +121,17 @@ d3.json("graph.json", function(error, graph) {
 		.on("drag", function(d) { nudge(d3.event.dx, d3.event.dy); }));
 
 
-link = link.data(graph.links).enter().append("line")
+link = link.data(graph.links).enter().append("path")
 .attr('stroke-width', 3)
+.attr('stroke-dasharray',function(d){
+
+	if (d.dataFlow){
+		return "5 5";
+	}else{
+		return "";
+	}	
+
+})
 .style("stroke", function(d){
 
 	if (d.dataFlow){
@@ -134,8 +141,9 @@ link = link.data(graph.links).enter().append("line")
 	}
 })
 .attr("d", function(d) {
-    return draw_curve(d.source.x, d.source.y, d.target.x, d.target.y, 50);
+    return draw_curve(d.source.x, d.source.y, d.target.x, d.target.y, -50);
  })
+.attr("fill","transparent")
 .attr("x1", function(d) { return d.source.x})
 .attr("y1", function(d) { return d.source.y})
 .attr("x2", function(d) { return d.target.x})
@@ -159,8 +167,6 @@ toolImage = toolImage.data(graph.links).enter().append("image")
 	}else{
 		return "./image/"+d.byTool+".png"	
 	}
-	
-
 })
 .attr('width', 40)
 .attr('height', 40)
@@ -193,34 +199,44 @@ toolImage = toolImage.data(graph.links).enter().append("image")
 
 });
 
-	function nudge(dx, dy) {
+function nudge(dx, dy) {
 
-// Node circle
-node.filter(function(d) { return d.selected; })
-.attr("cx", function(d) { return d.x += dx; })
-.attr("cy", function(d) { return d.y += dy; });
+	// Node circle
+	node.filter(function(d) { return d.selected; })
+	.attr("cx", function(d) { return d.x += dx; })
+	.attr("cy", function(d) { return d.y += dy; });
 
-// Text for app name
-text.filter(function(d) { return d.selected; })
-.attr("x", function(d) { return d.x; })
-.attr("y", function(d) { return d.y; });
+	// Text for app name
+	text.filter(function(d) { return d.selected; })
+	.attr("x", function(d) { return d.x; })
+	.attr("y", function(d) { return d.y; });
 
-// Link  - from point
-link.filter(function(d) { return d.source.selected; })
-.attr("x1", function(d) { return d.source.x ; })
-.attr("y1", function(d) { return d.source.y ; });
+	// Link  - from point
+	link.filter(function(d) { return d.source.selected; })
+	.attr("d", function(d) {
+	    return draw_curve(d.source.x, d.source.y, d.target.x, d.target.y, -50);
+	 })
 
-// Link - to point 
-link.filter(function(d) { return d.target.selected; })
-.attr("x2", function(d) { 		
-	return d.target.x; })
-.attr("y2", function(d) {
-	return d.target.y; });
+	// Link - to point 
+	link.filter(function(d) { return d.target.selected; })
+	.attr("d", function(d) {
+	    return draw_curve(d.source.x, d.source.y, d.target.x, d.target.y, -50);
+	 })
 
-// toolImage
-toolImage.filter(function(d) { return d.selected; })
-.attr("x", function(d) { return d.x; })
-.attr("y", function(d) { return d.y; });
+	// toolImage
+	toolImage.filter(function(d) {
+		if(d.source.selected || d.target.selected){
+			return true;
+		}
+	})
+	.attr("x", function(d) {
+		var temp = (d.source.x - d.target.x)/2 + d.target.x;
+		return temp += dx; 
+	})
+	.attr("y", function(d) { 
+		var temp = (d.source.y - d.target.y)/2 + d.target.y;
+		return  temp += dy;
+	 });
 
 
 //d3.event.preventDefault();
