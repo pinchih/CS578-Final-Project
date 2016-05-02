@@ -392,7 +392,7 @@ json_string = json_string + "]}"
 try:
 	parsed_json = json.loads(json_string)
 	
-	with open('graph.json', 'w') as outfile:
+	with open('overallArchitecture.json', 'w') as outfile:
 		json.dump(parsed_json, outfile)
 	
 except ValueError:

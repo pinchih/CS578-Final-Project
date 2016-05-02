@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+.node {
+	stroke: #fff;
+	stroke-width: 1.5px;
+}
+
+.node .selected {
+	stroke: red;
+}
+
+.link {
+	stroke: #999;
+}
+
+.brush .extent {
+	fill-opacity: .1;
+	stroke: #fff;
+	shape-rendering: crispEdges;
+}
+
+div.tooltip {	
+	position: absolute;			
+	text-align: center;			
+	padding: 2px;		
+	white-space: pre-wrap;		
+	font: 20px sans-serif;		
+	background: lightsteelblue;	
+	border: 0px;		
+	border-radius: 8px;			
+	pointer-events: none;		
+	width: 100%;
+	text-align: center;	
+}
+
+div.tooltip2 {	
+	position: absolute;			
+	text-align: center;			
+	padding: 2px;
+	font: 12px sans-serif;		
+	background: silver;	
+	border: 0px;		
+	border-radius: 8px;			
+	pointer-events: none;		
+	text-align: center;
+	white-space: pre-wrap;	
+}
+
+
+</style>
+<body>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script>
+
+var width = screen.width,
+		height = 800,
+		shiftKey;
+
+var svg = d3.select("body")
+		.attr("tabindex", 1)
+		.on("keydown.brush", keydown)
+		.on("keyup.brush", keyup)
+		.each(function() { this.focus(); })
+	.append("svg")
+		.attr("width", width)
+		.attr("height", height);
+
+svg.append("defs").append("marker")
+	.attr("id", "arrowhead")
+	.attr("refX", 6 + 3) /*must be smarter way to calculate shift*/
+	.attr("refY", 2)	
+	.attr("fill","gray")
+	.attr("markerWidth", 6)
+	.attr("markerHeight", 4)
+	.attr("orient", "auto")
+	.append("path")
+		.attr("d", "M 0,0 V 4 L6,2 Z"); //this is actual shape for arrowhead
+
+
+var link = svg.append("g")
+		.attr("class", "link")
+		.attr("marker-end", "url(#arrowhead)")
+	.selectAll("line");
+
+var brush = svg.append("g")
+		.datum(function() { return {selected: false, previouslySelected: false}; })
+		.attr("class", "brush");
+
+var node = svg.append("g")
+		.attr("class", "node")
+	.selectAll("circle");
+
+var text = svg.selectAll("text")
+			.append("text");
+
+var lineText = svg.selectAll("text")
+			.append("text");
+			
+var lineText2 = svg.selectAll("text")
+			.append("text");
+
+	
+var div = d3.select("body").append("div")	
+	.attr("class", "tooltip")	
+	.style("opacity", 0);
+
+var intentDiv = d3.select("body").append("div")	
+	.attr("class", "tooltip2")	
+	.style("opacity", 0);
+
+	
+		
+d3.json("overallArchitecture.json", function(error, graph) {
+
+	graph.links.forEach(function(d) {
+		d.source = graph.nodes[d.source];
+		d.target = graph.nodes[d.target];
+	});
+
+	link = link.data(graph.links).enter().append("line")
+			.attr('stroke-width', 3)
+			.style("stroke", "gray")
+			.attr("x1", function(d) { return d.source.x; })
+			.attr("y1", function(d) { return d.source.y; })
+			.attr("x2", function(d) { return d.target.x; })
+			.attr("y2", function(d) { return d.target.y; });
+		
+	/*
+	brush.call(d3.svg.brush()
+				.x(d3.scale.identity().domain([0, width]))
+				.y(d3.scale.identity().domain([0, height]))
+				.on("brushstart", function(d) {
+					node.each(function(d) { d.previouslySelected = shiftKey && d.selected; });
+				})
+				.on("brush", function() {
+					var extent = d3.event.target.extent();
+					node.classed("selected", function(d) {
+						return d.selected = d.previouslySelected ^
+								(extent[0][0] <= d.x && d.x < extent[1][0]
+								&& extent[0][1] <= d.y && d.y < extent[1][1]);
+					});
+				})
+				.on("brushend", function() {
+					d3.event.target.clear();
+					d3.select(this).call(d3.event.target);
+				}));
+*/
+	node = node.data(graph.nodes).enter().append("circle")
+			.attr("r", 10)
+			.attr("cx", function(d) { return d.x; })
+			.attr("cy", function(d) { return d.y; })
+			.attr("stroke","red")
+			.style("stroke-width", 1)
+			.style("opacity", 1)
+			.attr("fill", "yellow")
+			
+			
+			
+			
+			.on("mouseover", function(d) {		
+				div.transition()		
+					.duration(200)		
+					.style("opacity", .9);
+				intentDiv.transition()		
+					.duration(200)		
+					.style("opacity", .9);
+				
+				lineText.transition()		
+					.duration(200)		
+					.style("opacity", .9);
+				lineText2.transition()		
+					.duration(200)		
+					.style("opacity", .9);
+				
+				lineText	
+				.attr("x", function(d) { return ((d.source.x - d.target.x)/2 + d.target.x); })
+				.attr("y", function(d) { return ((d.source.y - d.target.y)/2 + d.target.y); });
+				
+				lineText2
+				.attr("x", function(d) { return ((d.source.x - d.target.x)/2 + d.target.x); })
+				.attr("y", function(d) { return ((d.source.y - d.target.y)/2 + d.target.y + 20); });							
+						
+				var cArray =  d.Components
+				var outputString = ""
+				for (var i = 0; i < cArray.length; i++) {
+					outputString = outputString + cArray[i].name + "<br/>"
+				}
+				
+				outputString = outputString + "[ Intents in" + d.Name + "]" + "<br/>"
+				var iArray =  d.Intents
+				for (var i = 0; i < iArray.length; i++) {
+					if(iArray[i].action != "None"){
+						outputString = outputString + iArray[i].action + "<br/>"	
+					}
+					
+				}					
+				div	.html("[ Components in " + d.Name + " ]"+ "<br/>" + outputString);
+								
+				
+				var permissions = d.usesPermissions
+				var temp = ""
+				for (var i = 0; i < permissions.length; i++) {					
+					temp = temp + permissions[i] + "<br/>"							
+				}
+				
+				
+				intentDiv .html("[ Permissions ]"+"<br/>" + temp +"<br/>")
+					.style("left", (d3.event.pageX) + "px")		
+					.style("top", (d3.event.pageY - 28) + "px");	
+				
+					
+					
+				})	
+								
+			.on("mouseout", function(d) {		
+				div.transition()		
+					//.duration(500)		
+					.style("opacity", 1);	
+				intentDiv.transition()		
+					.duration(500)		
+					.style("opacity", 0);	
+				lineText.transition()		
+				.duration(500)		
+				.style("opacity", 0);
+				lineText2.transition()		
+				.duration(500)		
+				.style("opacity", 0);
+
+			})
+			.on("mousedown", function(d) {
+				if (!d.selected) { // Don't deselect on shift-drag.
+					if (!shiftKey) node.classed("selected", function(p) { return p.selected = d === p; });
+					else d3.select(this).classed("selected", d.selected = true);
+				}
+			})
+			.on("mouseup", function(d) {
+				if (d.selected && shiftKey) d3.select(this).classed("selected", d.selected = false);
+			})
+			.call(d3.behavior.drag()
+				.on("drag", function(d) { nudge(d3.event.dx, d3.event.dy); }));
+	
+	text = text.data(graph.nodes).enter().append("text")
+		.attr("x", function (d) { return d.x+20; })
+		.attr("y", function (d) { return d.y+8; })
+		.text( function (d) { return d.Name; })
+		.attr("font-family", "sans-serif")
+		.attr("font-size", "20px")
+		.attr("fill", "black");
+	
+	lineText = lineText.data(graph.links).enter().append("text")
+		.style("font", "normal 15px Arial")
+		.text(function(d) { return "ICC: " + d.fromIntent; });
+		
+	lineText2 = lineText2.data(graph.links).enter().append("text")
+		.style("font", "normal 15px Arial")
+		.text(function(d) { return "Sender: " + d.fromComponent; });
+	
+});
+
+function nudge(dx, dy) {
+	node.filter(function(d) { return d.selected; })
+			.attr("cx", function(d) { return d.x += dx; })
+			.attr("cy", function(d) { return d.y += dy; });
+			
+
+	text.filter(function(d) { return d.selected; })
+			.attr("x", function(d) { return d.x+20; })
+			.attr("y", function(d) { return d.y+8; });
+
+
+	link.filter(function(d) { return d.source.selected; })
+			.attr("x1", function(d) { return d.source.x; })
+			.attr("y1", function(d) { return d.source.y; });
+
+	link.filter(function(d) { return d.target.selected; })
+			.attr("x2", function(d) { return d.target.x; })
+			.attr("y2", function(d) { return d.target.y; });
+
+	d3.event.preventDefault();
+}
+
+function keydown() {
+	if (!d3.event.metaKey) switch (d3.event.keyCode) {
+		case 38: nudge( 0, -1); break; // UP
+		case 40: nudge( 0, +1); break; // DOWN
+		case 37: nudge(-1,  0); break; // LEFT
+		case 39: nudge(+1,  0); break; // RIGHT
+	}
+	shiftKey = d3.event.shiftKey || d3.event.metaKey;
+}
+
+function keyup() {
+	shiftKey = d3.event.shiftKey || d3.event.metaKey;
+}
+
+</script>
