@@ -354,8 +354,14 @@ for app in AppList:
 	for otherApp in AppList:
 		if app != otherApp:
 			for intent in app.intentList:
-				if intent.action in otherApp.allowedActions:
-					linkedPair[str(app.name)] = [str(otherApp.name),intent.action,intent.sender]
+				if intent.action in otherApp.allowedActions:					
+					temp = None
+					for c in otherApp.componentList:
+						if intent.action in c.intentFilter.actions:
+							temp = c
+							break
+												
+					linkedPair[str(app.name)] = [str(otherApp.name),intent.action,intent.sender,c.cName]
 
 	
 	#print appNameToNumberDict[key+".xml"],appNameToNumberDict[value+".xml"]
@@ -375,19 +381,25 @@ for key, value in  linkedPair.iteritems():
 	if index == len(linkedPair)-1:
 		json_string = json_string + "{\"source\":" + str(source) +",\"target\":" + str(target) + ","
 		json_string = json_string + "\"fromComponent\":" + "\"" + str(value[2]) + "\","
+		json_string = json_string + "\"toComponent\":" + "\"" + str(value[3]) + "\","
 		json_string = json_string + "\"fromIntent\":" + "\"" + str(value[1]) + "\"" + "}"
 	else:
 		json_string = json_string + "{\"source\":" + str(source) +",\"target\":" + str(target) + ","
 		json_string = json_string + "\"fromComponent\":" + "\"" + str(value[2]) + "\","
+		json_string = json_string + "\"toComponent\":" + "\"" + str(value[3]) + "\","
 		json_string = json_string + "\"fromIntent\":" + "\"" + str(value[1]) + "\"" + "},"
 	index = index + 1	
 json_string = json_string + "]}"
 
 #print json_string
 
-#print AppList[1].allowedActions
+#print linkedPair
+		
+#print AppList[1].componentList[0].cName
 #print AppList[1].intentList
 #parsed_json = json.loads(json_string)
+
+
 
 try:
 	parsed_json = json.loads(json_string)

@@ -166,9 +166,11 @@ toolImage = toolImage.data(graph.links).enter().append("image")
 .on("mouseover", function(d) {
 	
 	var fromComponent = d.fromComponent
+	var toComponent = d.toComponent
 	var intent = d.fromIntent
 
-	var temp = "From : " + fromComponent + "</br>";
+	var temp = "From Component: " + fromComponent + "</br>";
+	temp = temp + "To Component: " + toComponent + "</br>";
 	temp = temp + "Intent : " + intent + "</br>";
 	
 	pathInfo.transition()		
