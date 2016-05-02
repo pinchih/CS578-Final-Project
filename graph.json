@@ -1,0 +1,688 @@
+{
+  "nodes": [
+    {
+      "Intents": [
+        {
+          "action": "None",
+          "component": "com.savva.TicaTacToe.UploadService",
+          "calledAt": "com.savva.TicaTacToe.TicTacToe: void onCreate(android.os.Bundle)",
+          "sender": "com.savva.TicaTacToe.TicTacToe",
+          "id": "9hrpu250cmar0a5r028uh6ljeb"
+        },
+        {
+          "action": "None",
+          "component": "com.savva.TicaTacToe.Game",
+          "calledAt": "com.savva.TicaTacToe.TicTacToe: void startGame(int)",
+          "sender": "com.savva.TicaTacToe.TicTacToe",
+          "id": "a92utcbcdjo7l03550h5clc3hp"
+        },
+        {
+          "action": "None",
+          "component": "com.savva.TicaTacToe.Game",
+          "calledAt": "com.savva.TicaTacToe.TicTacToe: void startGame(int)",
+          "sender": "com.savva.TicaTacToe.TicTacToe",
+          "id": "k8equ393c5vurfakcs7bds7njg"
+        },
+        {
+          "action": "None",
+          "component": "com.savva.TicaTacToe.UploadService",
+          "calledAt": "com.savva.TicaTacToe.Game: void onCreate(android.os.Bundle)",
+          "sender": "com.savva.TicaTacToe.Game",
+          "id": "9tmg5d8sdv0g0fqbbfrs9g9mta"
+        },
+        {
+          "action": "None",
+          "component": "com.savva.TicaTacToe.UploadService",
+          "calledAt": "com.savva.TicaTacToe.TicTacToe: void onCreate(android.os.Bundle)",
+          "sender": "com.savva.TicaTacToe.TicTacToe",
+          "id": "bigksnv695dufknb3qciboa4qm"
+        },
+        {
+          "action": "None",
+          "component": "com.savva.TicaTacToe.UploadService",
+          "calledAt": "com.savva.TicaTacToe.TicTacToe: void onCreate(android.os.Bundle)",
+          "sender": "com.savva.TicaTacToe.TicTacToe",
+          "id": "gt4m11msr268d6126au24r5c6h"
+        },
+        {
+          "action": "None",
+          "component": "com.savva.TicaTacToe.UploadService",
+          "calledAt": "com.savva.TicaTacToe.TicTacToe: void onCreate(android.os.Bundle)",
+          "sender": "com.savva.TicaTacToe.TicTacToe",
+          "id": "em3d80pfdup10o88jrhbkes4jd"
+        },
+        {
+          "action": "None",
+          "component": "com.savva.TicaTacToe.UploadService",
+          "calledAt": "com.savva.TicaTacToe.Game: void onCreate(android.os.Bundle)",
+          "sender": "com.savva.TicaTacToe.Game",
+          "id": "3ufukeg406h0etggkpkebp81h5"
+        },
+        {
+          "action": "None",
+          "component": "com.savva.TicaTacToe.Game",
+          "calledAt": "com.savva.TicaTacToe.TicTacToe: void startGame(int)",
+          "sender": "com.savva.TicaTacToe.TicTacToe",
+          "id": "a1qqv3qrqmnlpqcp22nh5d6s64"
+        },
+        {
+          "action": "None",
+          "component": "com.savva.TicaTacToe.Game",
+          "calledAt": "com.savva.TicaTacToe.TicTacToe: void startGame(int)",
+          "sender": "com.savva.TicaTacToe.TicTacToe",
+          "id": "9rcg0qv6nkh0dcecddrl2p11j3"
+        },
+        {
+          "action": "None",
+          "component": "com.savva.TicaTacToe.UploadService",
+          "calledAt": "com.savva.TicaTacToe.Game: void onCreate(android.os.Bundle)",
+          "sender": "com.savva.TicaTacToe.Game",
+          "id": "8imr3ojhtddeb90vu4nhpnulf3"
+        },
+        {
+          "action": "None",
+          "component": "com.savva.TicaTacToe.UploadService",
+          "calledAt": "com.savva.TicaTacToe.Game: void onCreate(android.os.Bundle)",
+          "sender": "com.savva.TicaTacToe.Game",
+          "id": "liao7lg2c7celtpgd79d6vi76q"
+        }
+      ],
+      "Name": "CatDogToe",
+      "usesPermissions": [
+        "INTERNET"
+      ],
+      "Components": [
+        {
+          "propagatedPermissions": "None",
+          "intentFilter": [
+            {
+              "actionName": "android.intent.action.MAIN"
+            }
+          ],
+          "type": "activity",
+          "name": "com.savva.TicaTacToe.TicTacToe",
+          "requiredPermissions": "None"
+        },
+        {
+          "propagatedPermissions": "None",
+          "intentFilter": [
+            
+          ],
+          "type": "activity",
+          "name": "com.savva.TicaTacToe.Game",
+          "requiredPermissions": "None"
+        },
+        {
+          "propagatedPermissions": "None",
+          "intentFilter": [
+            {
+              "actionName": "com.savva.TicaTacToe.UploadService.START_SERVICE"
+            }
+          ],
+          "type": "service",
+          "name": "com.savva.TicaTacToe.UploadService",
+          "requiredPermissions": "None"
+        }
+      ],
+      "y": 573,
+      "x": 75
+    },
+    {
+      "Intents": [
+        {
+          "action": "android.intent.action.SENDTO",
+          "component": "None",
+          "calledAt": "com.example.kai.contact.MainActivity: void onCreate(android.os.Bundle)",
+          "sender": "com.example.kai.contact.MainActivity",
+          "id": "o4k800ee5lhb6lgslh19cp7riu"
+        },
+        {
+          "action": "android.intent.action.SENDTO",
+          "component": "None",
+          "calledAt": "com.example.kai.contact.MainActivity: void onCreate(android.os.Bundle)",
+          "sender": "com.example.kai.contact.MainActivity",
+          "id": "q7dhkl9vrdrd7g8v8bqghpspgj"
+        },
+        {
+          "action": "android.intent.action.SENDTO",
+          "component": "None",
+          "calledAt": "com.example.kai.contact.MainActivity: void onCreate(android.os.Bundle)",
+          "sender": "com.example.kai.contact.MainActivity",
+          "id": "6klurs755ggt567og1chv0hjt9"
+        },
+        {
+          "action": "android.intent.action.SENDTO",
+          "component": "None",
+          "calledAt": "com.example.kai.contact.MainActivity: void onCreate(android.os.Bundle)",
+          "sender": "com.example.kai.contact.MainActivity",
+          "id": "dssf79je9aendhomgi7bm2uh3p"
+        }
+      ],
+      "Name": "Contact",
+      "usesPermissions": [
+        
+      ],
+      "Components": [
+        {
+          "propagatedPermissions": "None",
+          "intentFilter": [
+            {
+              "actionName": "android.intent.action.MAIN"
+            }
+          ],
+          "type": "activity",
+          "name": "com.example.kai.contact.MainActivity",
+          "requiredPermissions": "None"
+        }
+      ],
+      "y": 757,
+      "x": 390
+    },
+    {
+      "Intents": [
+        {
+          "action": "android.intent.action.VIEW",
+          "component": "None",
+          "calledAt": "com.umoni.utils.Helper$2: void run()",
+          "sender": "com.umoni.utils.Helper",
+          "id": "rp7993cbdbf4aju61omqhp0gam"
+        },
+        {
+          "action": "None",
+          "component": "None",
+          "calledAt": "com.umoni.utils.NativeUtils$8: void run()",
+          "sender": "com.umoni.utils.NativeUtils",
+          "id": "78i92g5ca9nppuemf5hlndraba"
+        },
+        {
+          "action": "android.intent.action.VIEW",
+          "component": "None",
+          "calledAt": "com.umoni.utils.Helper$2: void run()",
+          "sender": "com.umoni.utils.Helper",
+          "id": "uoqlar4kk7kitc006gbunq7dcg"
+        },
+        {
+          "action": "android.intent.action.VIEW",
+          "component": "None",
+          "calledAt": "com.umoni.nocrash.AppActivity: void evaluate()",
+          "sender": "com.umoni.nocrash.AppActivity",
+          "id": "o83sfco3g70np7egn2j93a71vi"
+        },
+        {
+          "action": "android.intent.action.VIEW",
+          "component": "None",
+          "calledAt": "com.umoni.utils.Helper$2: void run()",
+          "sender": "com.umoni.utils.Helper",
+          "id": "f6jo61mb974lcjjborcab15cpq"
+        },
+        {
+          "action": "None",
+          "component": "None",
+          "calledAt": "com.umoni.utils.NativeUtils$7: void run()",
+          "sender": "com.umoni.utils.NativeUtils",
+          "id": "mig5uqblb74bnd3vigv144crqr"
+        },
+        {
+          "action": "None",
+          "component": "None",
+          "calledAt": "com.umoni.utils.NativeUtils$8: void run()",
+          "sender": "com.umoni.utils.NativeUtils",
+          "id": "112teulr3r06sp5lprt3d7m7u"
+        },
+        {
+          "action": "None",
+          "component": "None",
+          "calledAt": "com.umoni.utils.NativeUtils$6: void run()",
+          "sender": "com.umoni.utils.NativeUtils",
+          "id": "93mf51k4g7lrc3knu26017l668"
+        },
+        {
+          "action": "None",
+          "component": "None",
+          "calledAt": "com.umoni.utils.Helper$1: void run()",
+          "sender": "com.umoni.utils.Helper",
+          "id": "hmqs8qgn34h40i39psetvmtbg5"
+        },
+        {
+          "action": "android.intent.action.VIEW",
+          "component": "None",
+          "calledAt": "com.umoni.nocrash.AppActivity: void evaluate()",
+          "sender": "com.umoni.nocrash.AppActivity",
+          "id": "v5ivbme17s8hppcgr5jgn4tbp"
+        },
+        {
+          "action": "None",
+          "component": "None",
+          "calledAt": "com.umoni.utils.NativeUtils$6: void run()",
+          "sender": "com.umoni.utils.NativeUtils",
+          "id": "io4vdbr29qc8nfr071sdc3tgjk"
+        },
+        {
+          "action": "None",
+          "component": "None",
+          "calledAt": "com.umoni.utils.NativeUtils$7: void run()",
+          "sender": "com.umoni.utils.NativeUtils",
+          "id": "42oeas8pg86t6cokb2f76c2guf"
+        },
+        {
+          "action": "android.intent.action.VIEW",
+          "component": "None",
+          "calledAt": "com.umoni.utils.Helper$2: void run()",
+          "sender": "com.umoni.utils.Helper",
+          "id": "um93k2t9i97as4q6rl9fdk8ai6"
+        },
+        {
+          "action": "None",
+          "component": "None",
+          "calledAt": "com.umoni.utils.NativeUtils$8: void run()",
+          "sender": "com.umoni.utils.NativeUtils",
+          "id": "5rs1u0qj50f1ns7ho6qokdvbe0"
+        },
+        {
+          "action": "None",
+          "component": "None",
+          "calledAt": "com.umoni.utils.NativeUtils$6: void run()",
+          "sender": "com.umoni.utils.NativeUtils",
+          "id": "g9jue51ih7lrno82nu33jb728i"
+        },
+        {
+          "action": "None",
+          "component": "None",
+          "calledAt": "com.umoni.utils.Helper$1: void run()",
+          "sender": "com.umoni.utils.Helper",
+          "id": "qaeft65jqdk1b6nfl6619eibk5"
+        },
+        {
+          "action": "None",
+          "component": "None",
+          "calledAt": "com.umoni.utils.Helper$1: void run()",
+          "sender": "com.umoni.utils.Helper",
+          "id": "tdbpv1alds04hcq8v0nhkuenp1"
+        },
+        {
+          "action": "None",
+          "component": "None",
+          "calledAt": "com.umoni.utils.NativeUtils$7: void run()",
+          "sender": "com.umoni.utils.NativeUtils",
+          "id": "19bc732ujvjtrtt900vi8fpelo"
+        },
+        {
+          "action": "android.intent.action.VIEW",
+          "component": "None",
+          "calledAt": "com.umoni.nocrash.AppActivity: void evaluate()",
+          "sender": "com.umoni.nocrash.AppActivity",
+          "id": "m1iipf9q211kk9jpi4mh7gef6l"
+        },
+        {
+          "action": "None",
+          "component": "None",
+          "calledAt": "com.umoni.utils.NativeUtils$7: void run()",
+          "sender": "com.umoni.utils.NativeUtils",
+          "id": "puhalstdkrjhl0ldfn3qdimphp"
+        },
+        {
+          "action": "None",
+          "component": "None",
+          "calledAt": "com.umoni.utils.NativeUtils$8: void run()",
+          "sender": "com.umoni.utils.NativeUtils",
+          "id": "b26jn71a8k7oarotlh7v4m9o9"
+        },
+        {
+          "action": "android.intent.action.VIEW",
+          "component": "None",
+          "calledAt": "com.umoni.nocrash.AppActivity: void evaluate()",
+          "sender": "com.umoni.nocrash.AppActivity",
+          "id": "hnu384pkaib66g7v775f4rn90u"
+        },
+        {
+          "action": "None",
+          "component": "None",
+          "calledAt": "com.umoni.utils.Helper$1: void run()",
+          "sender": "com.umoni.utils.Helper",
+          "id": "dmtfu12ce6i7numujlsddt1p0i"
+        },
+        {
+          "action": "None",
+          "component": "None",
+          "calledAt": "com.umoni.utils.NativeUtils$6: void run()",
+          "sender": "com.umoni.utils.NativeUtils",
+          "id": "h88dhp78rkttdv3ppk66egtcan"
+        }
+      ],
+      "Name": "DoNotCrash",
+      "usesPermissions": [
+        "READ_GSERVICES",
+        "WRITE_EXTERNAL_STORAGE",
+        "ACCESS_NETWORK_STATE",
+        "READ_PHONE_STATE",
+        "INTERNET",
+        "ACCESS_COARSE_UPDATES",
+        "CHANGE_WIFI_STATE",
+        "READ_EXTERNAL_STORAGE",
+        "GET_TASKS",
+        "WAKE_LOCK",
+        "ACCESS_WIFI_STATE",
+        "INTERNET",
+        "ACCESS_NETWORK_STATE"
+      ],
+      "Components": [
+        {
+          "propagatedPermissions": "None",
+          "intentFilter": [
+            {
+              "actionName": "android.intent.action.MAIN"
+            }
+          ],
+          "type": "activity",
+          "name": "com.umoni.nocrash.AppActivity",
+          "requiredPermissions": "None"
+        },
+        {
+          "propagatedPermissions": "None",
+          "intentFilter": [
+            
+          ],
+          "type": "activity",
+          "name": "com.google.android.gms.ads.AdActivity",
+          "requiredPermissions": "None"
+        },
+        {
+          "propagatedPermissions": "None",
+          "intentFilter": [
+            
+          ],
+          "type": "activity",
+          "name": "com.inmobi.androidsdk.IMBrowserActivity",
+          "requiredPermissions": "None"
+        },
+        {
+          "propagatedPermissions": "None",
+          "intentFilter": [
+            
+          ],
+          "type": "activity",
+          "name": "com.qq.e.ads.AdActivity",
+          "requiredPermissions": "None"
+        },
+        {
+          "propagatedPermissions": "None",
+          "intentFilter": [
+            
+          ],
+          "type": "activity",
+          "name": "com.qq.e.ads.InterstitialAdActivity",
+          "requiredPermissions": "None"
+        },
+        {
+          "propagatedPermissions": "None",
+          "intentFilter": [
+            
+          ],
+          "type": "activity",
+          "name": "com.qq.e.ads.GdtBrowserActivity",
+          "requiredPermissions": "None"
+        },
+        {
+          "propagatedPermissions": "None",
+          "intentFilter": [
+            
+          ],
+          "type": "activity",
+          "name": "com.millennialmedia.android.MMActivity",
+          "requiredPermissions": "None"
+        },
+        {
+          "propagatedPermissions": "None",
+          "intentFilter": [
+            {
+              "actionName": "com.umoni.nocrash.intent.action.START"
+            },
+            {
+              "actionName": "com.umoni.nocrash.intent.action.COCKROACH"
+            },
+            {
+              "actionName": "org.agoo.android.intent.action.PING"
+            },
+            {
+              "actionName": "com.umoni.nocrash.intent.action.START"
+            },
+            {
+              "actionName": "com.umoni.nocrash.intent.action.COCKROACH"
+            },
+            {
+              "actionName": "org.agoo.android.intent.action.PING"
+            },
+            {
+              "actionName": "com.umoni.nocrash.intent.action.START"
+            },
+            {
+              "actionName": "com.umoni.nocrash.intent.action.COCKROACH"
+            },
+            {
+              "actionName": "org.agoo.android.intent.action.PING"
+            }
+          ],
+          "type": "service",
+          "name": "com.umeng.message.UmengService",
+          "requiredPermissions": "None"
+        },
+        {
+          "propagatedPermissions": "None",
+          "intentFilter": [
+            {
+              "actionName": "org.agoo.android.intent.action.ELECTION_V2"
+            }
+          ],
+          "type": "service",
+          "name": "org.android.agoo.service.ElectionService",
+          "requiredPermissions": "None"
+        },
+        {
+          "propagatedPermissions": "None",
+          "intentFilter": [
+            
+          ],
+          "type": "service",
+          "name": "com.umeng.message.UmengIntentService",
+          "requiredPermissions": "None"
+        },
+        {
+          "propagatedPermissions": "None",
+          "intentFilter": [
+            
+          ],
+          "type": "service",
+          "name": "com.qq.e.comm.DownloadService",
+          "requiredPermissions": "None"
+        },
+        {
+          "propagatedPermissions": "None",
+          "intentFilter": [
+            
+          ],
+          "type": "receiver",
+          "name": "com.umeng.message.NotificationProxyBroadcastReceiver",
+          "requiredPermissions": "None"
+        },
+        {
+          "propagatedPermissions": "None",
+          "intentFilter": [
+            {
+              "actionName": "android.net.conn.CONNECTIVITY_CHANGE"
+            },
+            {
+              "actionName": "android.intent.action.PACKAGE_REMOVED"
+            },
+            {
+              "actionName": "android.net.conn.CONNECTIVITY_CHANGE"
+            },
+            {
+              "actionName": "android.intent.action.PACKAGE_REMOVED"
+            }
+          ],
+          "type": "receiver",
+          "name": "com.umeng.message.RegistrationReceiver",
+          "requiredPermissions": "None"
+        },
+        {
+          "propagatedPermissions": "None",
+          "intentFilter": [
+            {
+              "actionName": "org.agoo.android.intent.action.RECEIVE"
+            },
+            {
+              "actionName": "com.umoni.nocrash.intent.action.COMMAND"
+            },
+            {
+              "actionName": "org.agoo.android.intent.action.RE_ELECTION_V2"
+            },
+            {
+              "actionName": "org.agoo.android.intent.action.RECEIVE"
+            },
+            {
+              "actionName": "com.umoni.nocrash.intent.action.COMMAND"
+            },
+            {
+              "actionName": "org.agoo.android.intent.action.RE_ELECTION_V2"
+            },
+            {
+              "actionName": "org.agoo.android.intent.action.RECEIVE"
+            },
+            {
+              "actionName": "com.umoni.nocrash.intent.action.COMMAND"
+            },
+            {
+              "actionName": "org.agoo.android.intent.action.RE_ELECTION_V2"
+            }
+          ],
+          "type": "receiver",
+          "name": "com.umeng.message.UmengBroadcastReceiver",
+          "requiredPermissions": "None"
+        }
+      ],
+      "y": 356,
+      "x": 160
+    },
+    {
+      "Intents": [
+        {
+          "action": "None",
+          "component": "info.jasonbutz.android.web.UploadService",
+          "calledAt": "info.jasonbutz.android.web.Main: void onCreate(android.os.Bundle)",
+          "sender": "info.jasonbutz.android.web.Main",
+          "id": "j876dsv8joaic23sm45r8jc88v"
+        },
+        {
+          "action": "android.intent.action.VIEW",
+          "component": "None",
+          "calledAt": "info.jasonbutz.android.web.Main$1: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)",
+          "sender": "info.jasonbutz.android.web.Main",
+          "id": "samj93a8o8q8i4lj9hub733g6v"
+        },
+        {
+          "action": "android.intent.action.VIEW",
+          "component": "None",
+          "calledAt": "info.jasonbutz.android.web.Main$1: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)",
+          "sender": "info.jasonbutz.android.web.Main",
+          "id": "8m7953skeb3s69boel6u00751q"
+        },
+        {
+          "action": "android.intent.action.VIEW",
+          "component": "None",
+          "calledAt": "info.jasonbutz.android.web.Main$1: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)",
+          "sender": "info.jasonbutz.android.web.Main",
+          "id": "ljf8fq9jr9degd07rlil6cfopf"
+        },
+        {
+          "action": "None",
+          "component": "info.jasonbutz.android.web.UploadService",
+          "calledAt": "info.jasonbutz.android.web.Main: void onCreate(android.os.Bundle)",
+          "sender": "info.jasonbutz.android.web.Main",
+          "id": "v5gdlcs3aou5uioib41skqno2a"
+        },
+        {
+          "action": "None",
+          "component": "info.jasonbutz.android.web.UploadService",
+          "calledAt": "info.jasonbutz.android.web.Main: void onCreate(android.os.Bundle)",
+          "sender": "info.jasonbutz.android.web.Main",
+          "id": "jfl4naf2jcclpvq7rihhgdbe9k"
+        },
+        {
+          "action": "None",
+          "component": "info.jasonbutz.android.web.UploadService",
+          "calledAt": "info.jasonbutz.android.web.Main: void onCreate(android.os.Bundle)",
+          "sender": "info.jasonbutz.android.web.Main",
+          "id": "cv2a3rgs6ninp2shdfkfbgfm1g"
+        },
+        {
+          "action": "android.intent.action.VIEW",
+          "component": "None",
+          "calledAt": "info.jasonbutz.android.web.Main$1: boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String)",
+          "sender": "info.jasonbutz.android.web.Main",
+          "id": "57nvds3smg0837tflidd97g0i3"
+        }
+      ],
+      "Name": "WebAppDemo",
+      "usesPermissions": [
+        "INTERNET"
+      ],
+      "Components": [
+        {
+          "propagatedPermissions": "None",
+          "intentFilter": [
+            {
+              "actionName": "android.intent.action.MAIN"
+            }
+          ],
+          "type": "activity",
+          "name": "info.jasonbutz.android.web.Main",
+          "requiredPermissions": "None"
+        },
+        {
+          "propagatedPermissions": "None",
+          "intentFilter": [
+            {
+              "actionName": "android.intent.action.SENDTO"
+            }
+          ],
+          "type": "service",
+          "name": "info.jasonbutz.android.web.UploadService",
+          "requiredPermissions": "None"
+        }
+      ],
+      "y": 102,
+      "x": 859
+    }
+  ],
+  "links": [
+    {
+      "fromComponent": "com.example.kai.contact.MainActivity",
+      "toComponent": "xxx.xxxx.xxx.xxx",
+      "source": 1,
+      "target": 3,
+      "byIntent": "android.intent.action.SENDTO",
+      "byTool": "DidFail",
+      "dataFlow":false
+    },
+    {
+      "fromComponent": "com.example.kai.contact.MainActivity",
+      "toComponent": "xxx.xxxx.xxx.xxx",
+      "source": 0,
+      "target": 2,
+      "byIntent": "android.intent.action.SENDTO",
+      "byTool": "Covert",
+      "dataFlow":false
+    },
+    {
+      "fromComponent": "com.example.kai.contact.MainActivity",
+      "toComponent": "xxx.xxxx.xxx.xxx",
+      "source": 1,
+      "target": 0,
+      "byIntent": "android.intent.action.SENDTO",
+      "byTool": "DidFail",
+      "dataFlow":true
+    }
+
+
+  ]
+}
