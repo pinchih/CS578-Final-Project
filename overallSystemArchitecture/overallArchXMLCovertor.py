@@ -45,16 +45,6 @@ class Intent:
 		self.id = id
 		self.random = random
 
-def strCheck(inputStr):
-	
-	if inputStr == None:
-		return inputStr
-	
-	if inputStr.find('"') != -1:
-		return inputStr[1:-1]
-	else:
-		return inputStr
-
 def xmlToJSON(xml):
 	
 	# Read from xml file
@@ -70,7 +60,7 @@ def xmlToJSON(xml):
 	usesPermissionList = []
 	
 	for p in soup.find_all("permission"):
-		 usesPermissionList.append(str(strCheck(p.string)))
+		 usesPermissionList.append(p.string.strip('\"'))
 		
 
 	# Extract components
@@ -86,34 +76,34 @@ def xmlToJSON(xml):
 		actions = actionList
 			
 		try :
-			categories = c.find("filter").categories.string
+			categories = c.find("filter").categories.string.strip('\"').replace("\"", "")
 		except AttributeError:
 			categories = "None"
 
 		try :
-			pathData = c.find("filter").pathData.string
+			pathData = c.find("filter").pathData.string.strip('\"').replace("\"", "")
 		except AttributeError:
 			pathData = "None"
 		
 		filterOject = Filter(actions,categories,pathData)
 		
 		try :
-			componentType = c.type.string
+			componentType = c.type.string.strip('\"').replace("\"", "")
 		except AttributeError:
 			componentType = "None"
 		
 		try :
-			componentName = c.find("name").string
+			componentName = c.find("name").string.strip('\"').replace("\"", "")
 		except AttributeError:
 			componentName = "None"
 			
 		try :
-			RP = c.RequiredPermissions.string
+			RP = c.RequiredPermissions.string.strip('\"').replace("\"", "")
 		except AttributeError:
 			RP = "None"
 			
 		try :
-			PP = c.PropagatedPermissions.string
+			PP = c.PropagatedPermissions.string.strip('\"').replace("\"", "")
 		except AttributeError:
 			PP = "None"
 		
@@ -126,58 +116,58 @@ def xmlToJSON(xml):
 	for i in soup.find_all("Intent"):
 		
 		try :
-			calledAt = i.calledAt.string
+			calledAt = i.calledAt.string.strip('\"').replace("\"", "")
 		except AttributeError:
 			calledAt = "None"
 		
 		try :
-			sender = i.sender.string
+			sender = i.sender.string.strip('\"').replace("\"", "")
 		except AttributeError:
 			sender = "None"
 			
 		try :
-			component = i.component.string
+			component = i.component.string.strip('\"').replace("\"", "")
 		except AttributeError:
 			component = "None"
 
 		try :
-			action = i.action.string
+			action = i.action.string.strip('\"').replace("\"", "")
 		except AttributeError:
 			action = "None"
 			
 		try :
-			dataType = i.dataType.string
+			dataType = i.dataType.string.strip('\"').replace("\"", "")
 		except AttributeError:
 			dataType = "None"
 		
 		try :
-			scheme = i.scheme.string
+			scheme = i.scheme.string.strip('\"').replace("\"", "")
 		except AttributeError:
 			scheme = "None"
 			
 		try :
-			extra = i.extra.string
+			extra = i.extra.string.strip('\"').replace("\"", "")
 		except AttributeError:
 			extra = "None"
 			
 		try :
-			sensitiveData = i.sensitiveData.string
+			sensitiveData = i.sensitiveData.string.strip('\"').replace("\"", "")
 		except AttributeError:
 			sensitiveData = "None"
 			
 		try :
-			consumerMethod = i.consumerMethod.string
+			consumerMethod = i.consumerMethod.string.strip('\"').replace("\"", "")
 		except AttributeError:
 			consumerMethod = "None"
 			
 		intentID = i.id.string
 			
 		try :
-			random = i.random.string
+			random = i.random.string.strip('\"').replace("\"", "")
 		except AttributeError:
 			random = "None"
 		
-		intentObject = Intent(calledAt, sender, component, str(strCheck(action)), dataType, scheme, extra, sensitiveData, consumerMethod, intentID, random)
+		intentObject = Intent(calledAt, sender, component, str(action.strip('\"')), dataType, scheme, extra, sensitiveData, consumerMethod, intentID, random)
 		
 		intentList.append(intentObject)
 		totalIntents.append(intentObject)
@@ -294,8 +284,7 @@ def xmlToJSON(xml):
 		jsonStr = jsonStr + '{\"calledAt\":\"' + str(iObject.calledAt) +'\",'
 		jsonStr = jsonStr + '\"sender\":\"' + str(iObject.sender) +'\",'
 		jsonStr = jsonStr + '\"component\":\"' + str(iObject.component) +'\",'
-		
-		jsonStr = jsonStr + '\"action\":\"' + str(strCheck(iObject.action)) +'\",'
+		jsonStr = jsonStr + '\"action\":\"' + str(iObject.action) + '\",'
 		#jsonStr = jsonStr + '\"dataType\":\"' + str(iObject.dataType) +'\",'
 		#jsonStr = jsonStr + '\"scheme\":\"' + str(iObject.scheme) +'\",'
 		#jsonStr = jsonStr + '\"extra\":\"' + str(iObject.extra) +'\",'
@@ -336,7 +325,7 @@ for xml in filesInDir:
 	
 	json_string = json_string + "{\"x\":"
 
-	json_string = json_string + str(randint(50,1230)) + ",\"y\":"
+	json_string = json_string + str(randint(50,900)) + ",\"y\":"
 
 	json_string = json_string + str(randint(30,770)) + ","
 	
@@ -367,8 +356,19 @@ for app in AppList:
 	#print appNameToNumberDict[key+".xml"],appNameToNumberDict[value+".xml"]
 
 
+'''
+vulnerableApp = {}
 
+soup2 = BeautifulSoup(open('CatDogToeAnalysis.xml'),"xml")
 
+for i in soup2.findAll('vulnerability'):
+	vulnerableComponent = str(i.find('vulnerabilityElements').find('description').text)
+	for app in AppList:
+		for c in app.componentList:
+			if vulnerableComponent in c.cName:
+				vulnerableApp[str(app.name)] = (str(i.find('type').text),str(i.find('description').text))
+				break
+'''
 
 json_string = json_string + "\"links\":["
 
@@ -378,28 +378,35 @@ index = 0
 for key, value in  linkedPair.iteritems():	
 	source = appNameToNumberDict[key+".xml"]
 	target = appNameToNumberDict[value[0]+".xml"]
+	
+	'''
+	try:
+		description = vulnerableApp[key]
+	except KeyError:
+		description = vulnerableApp[value[0]]
+	'''
 	if index == len(linkedPair)-1:
 		json_string = json_string + "{\"source\":" + str(source) +",\"target\":" + str(target) + ","
 		json_string = json_string + "\"fromComponent\":" + "\"" + str(value[2]) + "\","
 		json_string = json_string + "\"toComponent\":" + "\"" + str(value[3]) + "\","
+		json_string = json_string + "\"byTool\":" + "\"" + "Covert" + "\","
+		json_string = json_string + "\"description\":" + "\"" + description + "\","
 		json_string = json_string + "\"fromIntent\":" + "\"" + str(value[1]) + "\"" + "}"
 	else:
 		json_string = json_string + "{\"source\":" + str(source) +",\"target\":" + str(target) + ","
 		json_string = json_string + "\"fromComponent\":" + "\"" + str(value[2]) + "\","
 		json_string = json_string + "\"toComponent\":" + "\"" + str(value[3]) + "\","
+		json_string = json_string + "\"byTool\":" + "\"" + "Covert" + "\","
+		json_string = json_string + "\"description\":" + "\"" + description + "\","
 		json_string = json_string + "\"fromIntent\":" + "\"" + str(value[1]) + "\"" + "},"
 	index = index + 1	
 json_string = json_string + "]}"
 
 #print json_string
-
 #print linkedPair
-		
 #print AppList[1].componentList[0].cName
 #print AppList[1].intentList
 #parsed_json = json.loads(json_string)
-
-
 
 try:
 	parsed_json = json.loads(json_string)
