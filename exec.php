@@ -1,18 +1,8 @@
-<html><body>
-  <form method="post" action="covert.php" target="_blank">
-    <input type="submit" name="send" value="COVERT">
-  </form>
-  <form method="post" action="iccta.php" target="_blank">
-    <input type="submit" name="send" value="IccTA">
-  </form>
-  <form method="post" action="didfail.php" target="_blank">
-    <input type="submit" name="send" value="DidFail">
-  </form>
-
 <?php
 
   // Clean tmp directory
   shell_exec("rm apkfiles/*");
+  shell_exec("rm scripts/log*.txt");
 
   // Move uploaded files to apkfiles/
   foreach ($_FILES["upfile"]["error"] as $key => $value) {
@@ -103,13 +93,16 @@
   include("./overallArchitecture.html");
   echo "<br>";
 
-  // Execute Covert on this Server
-  shell_exec('./scripts/covert.sh > /dev/null &');
-
-  // Execute Didfail on this Server
-  shell_exec('./scripts/didfail.sh > /dev/null &');
+  // Execute Covert and DidFail
+  shell_exec('./scripts/vulnerable.sh > /dev/null &');
 ?>
 
-
+<html><body>
+  <center>
+  <form method="post" action="vulnerable.php" target="_blank">
+    <input type="submit" name="send" value="Get Vulnerable Path" style="width:150px; height:40px">
+  </form>
+  </center>
+  <br><br>
 </body>
 </html>
