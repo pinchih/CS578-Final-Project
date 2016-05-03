@@ -176,15 +176,17 @@ toolImage = toolImage.data(graph.links).enter().append("image")
 	var toComponent = d.toComponent
 	var intent = d.byIntent
 
-	var temp = "From : " + fromComponent + "</br>";
-	temp = temp + "To : " + toComponent + "</br>";
-	temp = temp + "Intent : " + intent + "</br>";
+	var temp = "- From : " + fromComponent + "</br>";
+	temp = temp + "- To : " + toComponent + "</br>";
+	temp = temp + "- Intent : " + intent + "</br>";
+	temp = temp + "- Description : " + d.description + "</br>";
 	
 	pathInfo.transition()		
 		.duration(200)		
 		.style("opacity", .9);
 
 	pathInfo.html(temp)
+		.style("width","500px")
 		.style("left", (d3.event.pageX) + "px")		
 		.style("top", (d3.event.pageY + 20) + "px");	
 

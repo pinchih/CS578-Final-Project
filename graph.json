@@ -662,6 +662,7 @@
       "target": 3,
       "byIntent": "android.intent.action.SENDTO",
       "byTool": "DidFail",
+      "description":"This is a description of vulnerable path",
       "dataFlow":false
     },
     {
@@ -671,6 +672,7 @@
       "target": 2,
       "byIntent": "android.intent.action.SENDTO",
       "byTool": "Covert",
+      "description":"This is a description of vulnerable path This is a description of vulnerable path This is a description of vulnerable path This is a description of vulnerable path This is a description of vulnerable path This is a description of vulnerable path",
       "dataFlow":false
     },
     {
@@ -680,6 +682,7 @@
       "target": 0,
       "byIntent": "android.intent.action.SENDTO",
       "byTool": "DidFail",
+      "description":"This is a description of vulnerable path",
       "dataFlow":true
     }
 

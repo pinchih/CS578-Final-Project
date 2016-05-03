@@ -169,9 +169,9 @@ toolImage = toolImage.data(graph.links).enter().append("image")
 	var toComponent = d.toComponent
 	var intent = d.fromIntent
 
-	var temp = "From Component: " + fromComponent + "</br>";
-	temp = temp + "To Component: " + toComponent + "</br>";
-	temp = temp + "Intent : " + intent + "</br>";
+	var temp = "- From Component: " + fromComponent + "</br>";
+	temp = temp + "- To Component: " + toComponent + "</br>";
+	temp = temp + "- Intent : " + intent + "</br>";
 	
 	pathInfo.transition()		
 		.duration(200)		
