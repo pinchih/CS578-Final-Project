@@ -1,30 +1,34 @@
+#What's this?
+This is a final project for Software Architecture ( CSCI578 ) at University of Southern California. In this project, we designed and implemented a web-based tool that enables users to check if installed apps on their Android devices are exposed to any threats of Inter-Component Communication (ICC) attacks and users can see a visualized result of overall architecture of targeted apps and also the potential vulnerable paths among applications.
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+#Members
+* [Chris Daniels](https://github.com/chris-daniels)
+* [Pin-Chih Lin](https://github.com/pinchih)
+* [Tomita Tatsuhiko](https://github.com/tomitatsu)
+
+#An overview of the system     
+![picture alt](https://github.com/pinchih/CS578-Final-Project/blob/master/image/system_graph.png?raw=true)
+
+#Overall system architecture visualization example
+![](/image/overall_system_architecture_example.gif)
+#Vulerable paths visualization example
+
+#Tools
+* OverallArchitectureXMLConverter.py
+* VulnerablePathXMLConverter.py
+* VulnerablePathDidFail.py
+#Usage
+
+#Architectural pattern/styles used
+
+#Reference tools/libraries/web services
+* Beautiful Soup ([https://www.crummy.com/software/BeautifulSoup/](https://www.crummy.com/software/BeautifulSoup/))
+* D3.js ([https://d3js.org/](https://d3js.org/))
+* DigitalOcean ([https://www.digitalocean.com/](https://www.digitalocean.com/))
 
 
-Hi there! Welcome to Cloud9 IDE!
-
-To get you started, we have created a small hello world application.
-
-1) Open the hello-world.php file
-
-2) Follow the run instructions in the file's comments
-
-3) If you want to look at the Apache logs, check out ~/lib/apache2/log
-
-And that's all there is to it! Just have fun. Go ahead and edit the code, 
-or add new files. It's all up to you! 
-
-Happy coding!
-The Cloud9 IDE team
 
 
-## Support & Documentation
 
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
-To watch some training videos, visit http://www.youtube.com/user/c9ide
+
+
