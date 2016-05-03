@@ -25,7 +25,8 @@ This is a final project for Software Architecture ( CSCI578 ) at University of S
 * Beautiful Soup ([https://www.crummy.com/software/BeautifulSoup/](https://www.crummy.com/software/BeautifulSoup/))
 * D3.js ([https://d3js.org/](https://d3js.org/))
 * DigitalOcean ([https://www.digitalocean.com/](https://www.digitalocean.com/))
-
+* DidFail ([https://www.cs.cmu.edu/~wklieber/didfail/](https://www.cs.cmu.edu/~wklieber/didfail/))
+* COVERT ([http://www.sdalab.com/tools/covert](http://www.sdalab.com/tools/covert))
 
 
 
