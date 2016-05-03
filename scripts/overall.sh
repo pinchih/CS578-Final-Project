@@ -25,7 +25,7 @@ python overallArchXMLCovertor.py 2>&1 >> $LOGFILE
 ## Convert XML to JSON for intra application visualization
 cd $COMPO
 rm -rf output/*
-python soup.py $COVERT/app_repo/apkfiles/analysis/model ./output
+python soup.py $COVERT/app_repo/apkfiles/analysis/model ./output 2>&1 >> $LOGFILE
 
 
 echo "__Finished__" >> $LOGFILE

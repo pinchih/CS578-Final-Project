@@ -12,6 +12,10 @@ sh ./covert.sh apkfiles 2>&1 > $LOGFILE
 ## Copy the result 
 cp app_repo/apkfiles/apkfiles.xml $OVERALL/
 
+## Convert xml to json (graph.json will be updated)
+cd $OVERALL
+python VulnerablePathXMLCovertor.py
+
 echo "__Finished__" >> $LOGFILE
 
 

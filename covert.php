@@ -14,5 +14,8 @@
   } else {
     echo "<br> Status: COVERT is still Running ... Close this and try again <br>";
   }
+
+  // Show visualization for valunerable path
+  
 ?>
 

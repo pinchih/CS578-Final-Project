@@ -12,7 +12,8 @@ export soot_base=$didfail/workspace   # for the APK transformer
 export cert_apk_transform_dir=$didfail/cert/transformApk
 
 export jvm_flags="-Xmx2g -Xss1g"
-export max_mem=5250000
+#export max_mem=5250000
+export max_mem=unlimited
 export max_time=4200
 export python=python2
 
