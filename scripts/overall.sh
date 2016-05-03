@@ -11,6 +11,7 @@ echo "Extracting apk models ..."
 ./covert.sh model apkfiles > $LOGFILE
 
 ## Copy the result
+rm $OVERALL/*.xml
 cp -f $COVERT/app_repo/apkfiles/analysis/model/*.xml $OVERALL
 
 ## Convert XML to JSON
@@ -18,7 +19,7 @@ echo "Convert extracting data to json ..."
 #cd $CURRENT
 #python soup.py ../sample/analysis_tool/covert_dist/app_repo/apkfiles/analysis/model output >> $LOGFILE
 cd $OVERALL
-python overallArchXMLCovertor.py >> $LOGFILE
+python overallArchXMLCovertor.py 2>&1 >> $LOGFILE
 
 echo "__Finished__" >> $LOGFILE
 
