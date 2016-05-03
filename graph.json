@@ -662,7 +662,7 @@
       "target": 3,
       "byIntent": "android.intent.action.SENDTO",
       "byTool": "DidFail",
-      "description":"This is a description of vulnerable path",
+      "description":"None",
       "dataFlow":false
     },
     {

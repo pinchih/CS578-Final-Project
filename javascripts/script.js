@@ -162,16 +162,23 @@ toolImage = toolImage.data(graph.links).enter().append("image")
 .attr("y", function(d) { return ((d.source.y - d.target.y)/2 + d.target.y); })
 .attr("xlink:href",function(d) {
 
-	if (d.dataFlow){
-		return "./image/dataFlow.png"
-	}else{
-		return "./image/"+d.byTool+".png"	
+	if(d.description != "None"){
+
+		if (d.dataFlow){
+			return "./image/dataFlow.png"
+		}else{
+			return "./image/"+d.byTool+".png"	
+		}
 	}
+
+	
 })
 .attr('width', 40)
 .attr('height', 40)
 .on("mouseover", function(d) {
 	
+	if(d.description != "None"){
+
 	var fromComponent = d.fromComponent
 	var toComponent = d.toComponent
 	var intent = d.byIntent
@@ -181,14 +188,15 @@ toolImage = toolImage.data(graph.links).enter().append("image")
 	temp = temp + "- Intent : " + intent + "</br>";
 	temp = temp + "- Description : " + d.description + "</br>";
 	
-	pathInfo.transition()		
-		.duration(200)		
-		.style("opacity", .9);
+		pathInfo.transition()		
+			.duration(200)		
+			.style("opacity", .9);
 
-	pathInfo.html(temp)
-		.style("width","500px")
-		.style("left", (d3.event.pageX) + "px")		
-		.style("top", (d3.event.pageY + 20) + "px");	
+		pathInfo.html(temp)
+			.style("width","500px")
+			.style("left", (d3.event.pageX) + "px")		
+			.style("top", (d3.event.pageY + 20) + "px");	
+	}
 
 })
 .on("mouseout", function(d) {
