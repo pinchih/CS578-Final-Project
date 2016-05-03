@@ -75,7 +75,7 @@
   $retval = array();
   $ret = 0;
   for ( $i = 1; $i <= 1000; $i++ ) {
-    // Output log every 5 sec (if no progress, not output)
+    // Output log every 1 sec (if no progress, not output)
     sleep( 1 );
     $output = shell_exec('tail -n 1 ./scripts/log.txt');
     if ($output != $tmp) {
@@ -86,7 +86,7 @@
     $tmp = $output;
 
     // If find string "Finished" in log file, then break the loop
-    exec ('grep Finished ./scripts/log.txt', $retval, $ret);
+    exec ('grep __Finished__ ./scripts/log.txt', $retval, $ret);
     if ($ret == 0) {
 #      echo $retval . "<br>";
       break;

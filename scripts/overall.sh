@@ -20,5 +20,5 @@ echo "Convert extracting data to json ..."
 cd $OVERALL
 python overallArchXMLCovertor.py >> $LOGFILE
 
-echo "Finished" >> $LOGFILE
+echo "__Finished__" >> $LOGFILE
 
