@@ -10,9 +10,10 @@ This is a final project for Software Architecture ( CSCI578 ) at University of S
 
 #Architectural pattern/styles used
 
-#Reference tools/libraries
+#Reference tools/libraries/web services
 * Beautiful Soup ([https://www.crummy.com/software/BeautifulSoup/](https://www.crummy.com/software/BeautifulSoup/))
 * D3.js ([https://d3js.org/](https://d3js.org/))
+* DigitalOcean ([https://www.digitalocean.com/](https://www.digitalocean.com/))
 
 
 
