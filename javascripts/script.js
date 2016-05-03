@@ -187,7 +187,7 @@ toolImage = toolImage.data(graph.links).enter().append("image")
 	temp = temp + "- To : " + toComponent + "</br>";
 	temp = temp + "- Intent : " + intent + "</br>";
 	temp = temp + "- Description : " + d.description + "</br>";
-	
+	f
 		pathInfo.transition()		
 			.duration(200)		
 			.style("opacity", .9);
