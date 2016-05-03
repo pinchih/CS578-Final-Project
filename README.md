@@ -14,9 +14,13 @@ This is a final project for Software Architecture ( CSCI578 ) at University of S
 #Vulerable paths visualization example
 
 #Tools
-* OverallArchitectureXMLConverter.py
-* VulnerablePathXMLConverter.py
-* VulnerablePathDidFail.py
+- OverallArchitectureXMLConverter.py
+  - This tool takes inputs of XML files generated from COVERT, and create a JSON file for visualization in browser.
+- VulnerablePathXMLConverter.py
+  - This tool takes inputs of XML files generated from COVERT for potential vulnerable paths, and create a JSON file for visualization in browser.
+- VulnerablePathDidFail.py
+  - This tool takes inputs of XML files generated from DidFail for potential vulnerable paths and JSON file created by VulnerablePathXMLConverter.py, combined the information into one JSON file.
+
 #Usage
 
 #Architectural pattern/styles used
