@@ -66,8 +66,6 @@
 
   // Extract apks
   echo "<br> Extracting by COVERT ... <br>";
-  // $output = shell_exec('../scripts/exec.sh '.escapeshellarg($fileName));
-  // $output = shell_exec('../scripts/overall.sh &');
   shell_exec('./scripts/overall.sh > /dev/null &');
 
   // Show the progress
@@ -78,7 +76,7 @@
   $ret = 0;
   for ( $i = 1; $i <= 1000; $i++ ) {
     // Output log every 5 sec (if no progress, not output)
-    sleep( 3 );
+    sleep( 1 );
     $output = shell_exec('tail -n 1 ./scripts/log.txt');
     if ($output != $tmp) {
       //echo $output;
