@@ -152,7 +152,10 @@ link = link.data(graph.links).enter().append("path")
 text = text.data(graph.nodes).enter().append("text")
 .attr("x", function (d) { return d.x; })
 .attr("y", function (d) { return d.y; })
-.text( function (d) { return d.Name; })
+.text(function(d){ 
+	return d.Name
+})
+.on("click", function(d) { window.open("/compo.html?file=interCompo/output/"+d.Name+".json"); })
 .attr("font-family", "sans-serif")
 .attr("font-size", "20px")
 .attr("fill", "black");
