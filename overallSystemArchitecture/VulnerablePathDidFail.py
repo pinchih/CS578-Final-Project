@@ -12,7 +12,8 @@ def to_JSON(obj):
 def processFD(inputFileName):
 	global obj
 	#open given file
-	with open(inputFileName,'r') as inputFile:
+	fullpath = '~/didfail/toyapps/out/' + inputFile
+	with open(fullpath,'r') as inputFile:
 		#beautiful soup to get package name
 		soup = BeautifulSoup(inputFile, "xml")
 		#get package name
@@ -115,7 +116,7 @@ def main(args):
 				processFD(filename)
 
 		#now look at phase 2 flows output
-		with open('flows.out','r') as flowsOut:
+		with open('~/didfail/toyapps/flows.out','r') as flowsOut:
 			processPhaseTwo(flowsOut)
 			flowsOut.close()
 
