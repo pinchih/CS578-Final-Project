@@ -62,7 +62,7 @@ let bubbleOffSet = (nodeRadius+bubbleRadius)/Math.sqrt(2);
 let lineOffSet = 35;
 let curvedLevel = [-100,100][Math.floor(Math.random()*2)];
 
-d3.json("overallArchitecture.json", function(error, graph) {
+d3.json("./overallSystemArchitecture/overallArchitecture.json", function(error, graph) {
 
 	graph.links.forEach(function(d) {
 		d.source = graph.nodes[d.source];
@@ -160,7 +160,7 @@ text = text.data(graph.nodes).enter().append("text")
 toolImage = toolImage.data(graph.links).enter().append("image")
 .attr("x", function(d) { return ((d.source.x - d.target.x)/2 + d.target.x); })
 .attr("y", function(d) { return ((d.source.y - d.target.y)/2 + d.target.y); })
-.attr("xlink:href","../image/info.png")
+.attr("xlink:href","./image/info.png")
 .attr('width', 25)
 .attr('height', 25)
 .on("mouseover", function(d) {
