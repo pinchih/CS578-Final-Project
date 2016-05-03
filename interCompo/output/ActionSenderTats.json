@@ -1,0 +1,8 @@
+{
+  "nodes":[
+    {"name":" ActionSender ","group": 5 ,"value":" "}
+  ],
+  "links":[
+    {"source": 0 ,"target": 0 ,"value": "dummy"}
+  ]
+}

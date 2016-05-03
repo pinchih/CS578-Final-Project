@@ -1,0 +1,26 @@
+{
+  "nodes":[
+    {"name":" ReplaceActivity ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" PasswordActivity ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" SearchResult ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" CreateRegistItemDialog ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" ShareActivity ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" ClipWatchService ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" MainPreference ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" ViewRegistActivity ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" MainActivity ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" BootReceiver ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" MushActivity ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" SearchBindService ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" SearchSuggestProvider ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" EditHistoryDialog ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" EditRegistDialog ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" AdActivity ","group": 2 ,"value":"[permissions]\n "},
+    {"name":" ViewHistoryActivity ","group": 2 ,"value":" "}
+  ],
+  "links":[
+    {"source": 4 ,"target": 9 ,"value":" [Intent] Explicit \n   [filter]\n      ReplaceActivity \n   [sender]\n      EditHistoryDialog \n "},
+    {"source": 0 ,"target": 10 ,"value":" [Intent] Explicit \n   [filter]\n      MainPreference \n   [sender]\n      MainActivity \n "},
+    {"source": 0 ,"target": 0 ,"value": "dummy"}
+  ]
+}

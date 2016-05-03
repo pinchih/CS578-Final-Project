@@ -1,0 +1,15 @@
+{
+  "nodes":[
+    {"name":" Photo Editor ","group": 0 ,"value":"[permissions]\n    INTERNET \n    BILLING \n    ACCESS_NETWORK_STATE \n    ACCESS_WIFI_STATE \n    SET_WALLPAPER \n    WRITE_EXTERNAL_STORAGE \n "},
+    {"name":" Magic Fluids Free ","group": 1 ,"value":"[permissions]\n    BIND_WALLPAPER \n    WRITE_EXTERNAL_STORAGE \n "},
+    {"name":" aNdClip Free - Clipboard ext -_3_2_4_apk-dl_com ","group": 2 ,"value":"[permissions]\n    INTERNET \n    ACCESS_NETWORK_STATE \n    RECEIVE_BOOT_COMPLETED \n    READ_CONTACTS \n    READ_EXTERNAL_STORAGE \n    WRITE_EXTERNAL_STORAGE \n "},
+    {"name":" All Call Recorder_1_38_apk-dl_com ","group": 3 ,"value":"[permissions]\n    PROCESS_OUTGOING_CALLS \n    INTERNET \n    READ_PHONE_STATE \n    ACCESS_NETWORK_STATE \n    ACCESS_COARSE_LOCATION \n    RECEIVE_BOOT_COMPLETED \n    READ_CONTACTS \n    RECORD_AUDIO \n    WAKE_LOCK \n    WRITE_EXTERNAL_STORAGE \n "},
+    {"name":" Twitter ","group": 4 ,"value":"[permissions]\n    INTERNET \n    C2D_MESSAGE \n    ACCESS_FINE_LOCATION \n    WRITE_CONTACTS \n    VIBRATE \n    AUTHENTICATE_ACCOUNTS \n    GET_ACCOUNTS \n    USE_CREDENTIALS \n    RESTRICTED \n    READ_SYNC_SETTINGS \n    READ_DATA \n    READ_CONTACTS \n    RECEIVE \n    MANAGE_ACCOUNTS \n    WAKE_LOCK \n    WRITE_SYNC_SETTINGS \n    WRITE_EXTERNAL_STORAGE \n "},
+    {"name":" ActionSenderTats ","group": 5 ,"value":" "}
+  ],
+  "links":[
+    {"source": 5 ,"target": 4 ,"value":" [Intent] android.intent.action.SEND \n   [filter]\n      PostActivity \n   [sender]\n      ActionSender \n "},
+    {"source": 3 ,"target": 0 ,"value":" [Intent] android.intent.action.SEND_MULTIPLE \n   [filter]\n      PhotoViewActivity \n   [sender]\n      Main \n "},
+    {"source": 0 ,"target": 0 ,"value": "dummy"}
+  ]
+}

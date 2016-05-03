@@ -1,0 +1,17 @@
+{
+  "nodes":[
+    {"name":" BS ","group": 0 ,"value":"[permissions]\n "},
+    {"name":" SettingsActivity ","group": 0 ,"value":"[permissions]\n "},
+    {"name":" BR ","group": 0 ,"value":"[permissions]\n "},
+    {"name":" FileBrowserActivity ","group": 0 ,"value":"[permissions]\n "},
+    {"name":" AdActivity ","group": 0 ,"value":"[permissions]\n "},
+    {"name":" BugReportActivity ","group": 0 ,"value":"[permissions]\n "},
+    {"name":" PhotoViewActivity ","group": 0 ,"value":"[permissions]\n "},
+    {"name":" MainActivity ","group": 0 ,"value":"[permissions]\n "},
+    {"name":" LPhotoProvider ","group": 0 ,"value":"[permissions]\n "},
+    {"name":" BatchActivity ","group": 0 ,"value":" "}
+  ],
+  "links":[
+    {"source": 0 ,"target": 0 ,"value": "dummy"}
+  ]
+}
