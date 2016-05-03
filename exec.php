@@ -61,12 +61,21 @@
 
 
   // Clean tmp directory "./files/"
+<<<<<<< HEAD
   shell_exec("rm -rf analysis_tool/covert_dist/app_repo/apkfiles");
   shell_exec('cp -rf apkfiles/ analysis_tool/covert_dist/app_repo/');
 
   // Extract apks
   echo "<br> Extracting by COVERT ... <br>";
   shell_exec('./scripts/overall.sh > /dev/null &');
+=======
+  //shell_exec("rm -rf analysis_tool/covert_dist/app_repo/apkfiles");
+  //shell_exec('cp -rf apkfiles/ analysis_tool/covert_dist/app_repo/');
+
+  // Extract apks
+  echo "<br> Extracting by COVERT ... <br>";
+  //shell_exec('./scripts/overall.sh > /dev/null &');
+>>>>>>> 741a2b22eb52ad39b15763244e1fb133a12a4cb7
 
   // Show the progress
   echo str_pad(" ",4096)."<br />\n";
@@ -104,7 +113,11 @@
   echo "<br>";
 
   // Execute Covert on this Server
+<<<<<<< HEAD
   // shell_exec('../scripts/covert.sh > /dev/null &');
+=======
+  shell_exec('./scripts/covert.sh > /dev/null &');
+>>>>>>> 741a2b22eb52ad39b15763244e1fb133a12a4cb7
   // $output = shell_exec('../scripts/covert.sh');
   // echo $output;
 ?>
