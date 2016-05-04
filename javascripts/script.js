@@ -123,6 +123,8 @@ d3.json("graph.json", function(error, graph) {
 
 link = link.data(graph.links).enter().append("path")
 .attr('stroke-width', 3)
+
+/*
 .attr('stroke-dasharray',function(d){
 
 	if (d.dataFlow){
@@ -132,14 +134,8 @@ link = link.data(graph.links).enter().append("path")
 	}	
 
 })
-.style("stroke", function(d){
-
-	if (d.dataFlow){
-		return "green";
-	}else{
-		return "gray";
-	}
-})
+*/
+.style("stroke", "gray")
 .attr("d", function(d) {
     return draw_curve(d.source.x, d.source.y, d.target.x, d.target.y, curvedLevel);
  })
@@ -167,11 +163,7 @@ toolImage = toolImage.data(graph.links).enter().append("image")
 
 	if(d.description != "None"){
 
-		if (d.dataFlow){
-			return "./image/dataFlow.png"
-		}else{
-			return "./image/"+d.byTool+".png"	
-		}
+		return "./image/"+d.byTool+".png";
 	}
 
 	
