@@ -149,6 +149,7 @@ text = text.data(graph.nodes).enter().append("text")
 .attr("x", function (d) { return d.x; })
 .attr("y", function (d) { return d.y; })
 .text(function(d){ 
+	console.log(d.Name)
 	return d.Name
 })
 .on("click", function(d) { window.open("/compo.html?file=interCompo/output/"+d.Name+".json"); })
@@ -172,17 +173,16 @@ toolImage = toolImage.data(graph.links).enter().append("image")
 .attr('height', 40)
 .on("mouseover", function(d) {
 	
-	if(d.description != "None"){
+	if(d.description == "DidFail"){
 
-	var fromComponent = d.fromComponent
-	var toComponent = d.toComponent
-	var intent = d.byIntent
-
-	var temp = "- From : " + fromComponent + "</br>";
-	temp = temp + "- To : " + toComponent + "</br>";
-	temp = temp + "- Intent : " + intent + "</br>";
-	temp = temp + "- Description : " + d.description + "</br>";
-	f
+		var id = d.id
+		var resource = d.resources
+		
+		var temp = "- Id : " + id + "</br>";
+		temp = temp + "- Dangerous Functions : </br>" 
+		for(var i = 0 ;i< resource.length;i++){
+			temp =   temp + String(i+1) + ". " + resource[i] + "</br>";	
+		}
 		pathInfo.transition()		
 			.duration(200)		
 			.style("opacity", .9);
@@ -190,7 +190,27 @@ toolImage = toolImage.data(graph.links).enter().append("image")
 		pathInfo.html(temp)
 			.style("width","500px")
 			.style("left", (d3.event.pageX) + "px")		
-			.style("top", (d3.event.pageY + 20) + "px");	
+			.style("top", (d3.event.pageY + 20) + "px");
+
+	}else if(d.description != "None"){
+
+		var fromComponent = d.fromComponent
+		var toComponent = d.toComponent
+		var intent = d.byIntent
+
+		var temp = "- From : " + fromComponent + "</br>";
+		temp = temp + "- To : " + toComponent + "</br>";
+		temp = temp + "- Intent : " + intent + "</br>";
+		temp = temp + "- Description : " + d.description + "</br>";
+
+			pathInfo.transition()		
+				.duration(200)		
+				.style("opacity", .9);
+
+			pathInfo.html(temp)
+				.style("width","500px")
+				.style("left", (d3.event.pageX) + "px")		
+				.style("top", (d3.event.pageY + 20) + "px");	
 	}
 
 })
