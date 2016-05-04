@@ -22,6 +22,7 @@ This is a final project for Software Architecture ( CSCI578 ) at University of S
   - This tool takes inputs of XML files generated from DidFail for potential vulnerable paths and JSON file created by VulnerablePathXMLConverter.py, combined the information into one JSON file.
 
 #Usage
+Go to our [website](http://192.241.189.66/top.html), upload your applications, and see the analysis results.
 
 #Architectural pattern/styles used
 
