@@ -1,4 +1,6 @@
 #!/bin/bash
+# 2016.5.2. tats
+# usage: ./overall.sh
 
 CURRENT=$(cd $(dirname $0) && pwd)
 LOGFILE=$CURRENT/log.txt
@@ -17,14 +19,11 @@ cp -f $COVERT/app_repo/apkfiles/analysis/model/*.xml $OVERALL
 
 ## Convert XML to JSON for overall architecture
 echo "Convert extracting data to json ..."
-#cd $CURRENT
-#python soup.py ../sample/analysis_tool/covert_dist/app_repo/apkfiles/analysis/model output >> $LOGFILE
 cd $OVERALL
 python overallArchXMLCovertor.py 2>&1 >> $LOGFILE
 
 ## Convert XML to JSON for intra application visualization
 cd $COMPO
-rm -rf output/*
 python soup.py $COVERT/app_repo/apkfiles/analysis/model ./output 2>&1 >> $LOGFILE
 
 

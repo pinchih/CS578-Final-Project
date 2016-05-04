@@ -1,4 +1,6 @@
 #!/bin/bash
+# 2016.5.2 tats
+# usage: ./vulnerable.sh
 
 CURRENT=$(cd $(dirname $0) && pwd)
 LOGFILE=$CURRENT/log_vul.txt

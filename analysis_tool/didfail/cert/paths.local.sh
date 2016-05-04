@@ -1,4 +1,5 @@
-export didfail=~/didfail
+#export didfail=~/didfail
+export didfail=/var/www/html/CS578-Final-Project/analysis_tool/didfail
 export epicc_dir=$didfail/epicc
 export dare_dir=$didfail/dare-1.1.0-linux
 export dare=$dare_dir/dare

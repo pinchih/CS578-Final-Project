@@ -116,7 +116,7 @@ def main(args):
 				processFD(filename)
 
 		#now look at phase 2 flows output
-		with open('~/didfail/toyapps/flows.out','r') as flowsOut:
+		with open('./flows.out','r') as flowsOut:
 			processPhaseTwo(flowsOut)
 			flowsOut.close()
 

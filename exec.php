@@ -1,8 +1,15 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Overall Architecture</title>
+	<link rel="stylesheet" type="text/css" href="./css/base.css">
+</head>
+<body>
+
 <?php
 
   // Clean tmp directory
-  shell_exec("rm apkfiles/*");
-  shell_exec("rm scripts/log*.txt");
+  shell_exec('./scripts/clean.sh');
 
   // Move uploaded files to apkfiles/
   foreach ($_FILES["upfile"]["error"] as $key => $value) {
@@ -37,8 +44,7 @@
   }
   
   // Send apks by curl
-  $url = "https://csci578-test-tomitatsu.c9users.io/sample/test.php";
-
+  //$url = "https://csci578-test-tomitatsu.c9users.io/sample/test.php";
   // Run other servers
   // echo "send files to " . $url . "<br>";
   // echo $params["upfile[0]"] . "<br>";
@@ -49,24 +55,22 @@
   // // echo "Result: " . $output . "<br>";
   // curl_close($curl);
 
-
-  // Clean tmp directory "./files/"
-  shell_exec("rm -rf analysis_tool/covert_dist/app_repo/apkfiles");
   shell_exec('cp -rf apkfiles/ analysis_tool/covert_dist/app_repo/');
 
   // Extract apks
-  echo "<br> Extracting by COVERT ... <br>";
+  echo "<br> Extracting by COVERT ";
   shell_exec('./scripts/overall.sh > /dev/null &');
 
   // Show the progress
-  echo str_pad(" ",4096)."<br />\n";
+  #echo str_pad(" ",4096)."<br />\n";
+  echo str_pad(" ",4096)."\n";
   ob_end_flush();
   ob_start('mb_output_handler');
   $retval = array();
   $ret = 0;
-  for ( $i = 1; $i <= 1000; $i++ ) {
+  for ( $i = 1; $i <= 100000; $i++ ) {
     // Output log every 1 sec (if no progress, not output)
-    sleep( 1 );
+    sleep( 0.5 );
     $output = shell_exec('tail -n 1 ./scripts/log.txt');
     if ($output != $tmp) {
       //echo $output;
@@ -97,7 +101,6 @@
   shell_exec('./scripts/vulnerable.sh > /dev/null &');
 ?>
 
-<html><body>
   <center>
   <form method="post" action="vulnerable.php" target="_blank">
     <input type="submit" name="send" value="Get Vulnerable Path" style="width:150px; height:40px">
