@@ -72,7 +72,7 @@ def processPhaseTwo(inputFile):
 			line = inputFile.readline().strip()
 			#we've processed the first line, let's look at all the sources now
 			while ('### \'Intent(' not in line) and (line != '--------------------'):
-				if 'Src:' in line:
+				if 'Src:' in line and '<' in line and '>' in line:
 					source = {}
 					line = line.split('<')[1].strip()
 					line = line.split('>')[0].strip()
@@ -83,7 +83,7 @@ def processPhaseTwo(inputFile):
 			link = {}
 			link['id'] = edge['id']
 			link['byTool'] = 'DidFail'
-			link['description'] = 'This is a description of vulnerable path' 
+			link['description'] = 'DidFail' 
 			link['dataFlow'] = False
 			for i in range(len(obj['nodes'])):
 				if 'package' in obj['nodes'][i].keys():
