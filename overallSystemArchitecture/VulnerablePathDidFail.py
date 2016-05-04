@@ -107,7 +107,7 @@ def processPhaseTwo(inputFile):
 def main(args):
 	global obj
 	
-	
+	    
 	#open generated json file and load into object
 	with open('../graph.json','r') as jsonFile:
 		obj = json.load(jsonFile)
