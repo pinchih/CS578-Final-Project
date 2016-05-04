@@ -11,6 +11,8 @@ This is a final project for Software Architecture ( CSCI578 ) at University of S
 
 #Overall system architecture visualization example
 ![](/image/overall_system_architecture_example.gif)
+The overall system architecture visulaization gives you glance of how your application and other applications that we chosen interact with each other in terms of ICC calls. You may mouse over the path to see what components were interacting or mouse over the node, to see what user permissions are alloed for this application. If you would like to know the interaction among components within an application, just click the name of that app, it will open up another window and show you the result.
+
 #Vulerable paths visualization example
 
 #Tools
