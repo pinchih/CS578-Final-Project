@@ -68,6 +68,7 @@
   ob_start('mb_output_handler');
   $retval = array();
   $ret = 0;
+  $dotnum = 0;
   for ( $i = 1; $i <= 100000; $i++ ) {
     // Output log every 1 sec (if no progress, not output)
     sleep( 0.5 );
@@ -76,7 +77,11 @@
       //echo $output;
       //echo "<br>";
       echo ".";
-    }
+      $dotnum += 1;
+      if ($dotnum % 200 == 0) {
+        echo "<br>";
+      }
+   }
     $tmp = $output;
 
     // If find string "Finished" in log file, then break the loop

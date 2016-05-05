@@ -25,6 +25,7 @@ cd $DIDFAIL
 
 ## Copy the result 
 cp out/flows.out $OVERALL/
+cp out/*.fd.xml $OVERALL/
 
 ## Convert xml to json (graph.json will be updated)
 cd $OVERALL

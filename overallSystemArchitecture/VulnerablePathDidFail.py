@@ -12,7 +12,8 @@ def to_JSON(obj):
 def processFD(inputFileName):
 	global obj
 	#open given file
-	fullpath = '~/didfail/toyapps/out/' + inputFile
+	#fullpath = '~/didfail/toyapps/out/' + inputFile
+	fullpath = '/var/www/html/CS578-Final-Project/overallSystemArchitecture/' + inputFileName
 	with open(fullpath,'r') as inputFile:
 		#beautiful soup to get package name
 		soup = BeautifulSoup(inputFile, "xml")
