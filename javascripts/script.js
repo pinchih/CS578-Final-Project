@@ -211,11 +211,13 @@ toolImage = toolImage.data(graph.links).enter().append("image")
 
 		var fromComponent = d.fromComponent
 		var toComponent = d.toComponent
+		var type = d.type
 		var intent = d.byIntent
 
 		var temp = "- From : " + fromComponent + "</br>";
 		temp = temp + "- To : " + toComponent + "</br>";
 		temp = temp + "- Intent : " + intent + "</br>";
+		temp = temp + "- Vulnerability type : " + type + "</br>";
 		temp = temp + "- Description : " + d.description + "</br>";
 
 			pathInfo.transition()		
