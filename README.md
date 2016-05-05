@@ -41,6 +41,8 @@ Overall system architecture and vulnerable paths visualization show the ICC call
 Go to our [website](http://192.241.189.66/top.html), upload your applications, and see the analysis results.(Please note that at any point in the future, the server might went done due to limitation of the usage of the server.)
 
 #Architectural pattern/styles used
+The architectural style that we choosed for implementing this project is Client-Server sytle. In this sytle, the components of the system will be mulitple clients and one server, and the connector between clients and server will be the RPC-based network protocols, such as TCP/IP. Technically speaking, the server in a Client-Server style should be capable of handling multiple connection from different clients, however, in our case, due to the heavy loading of executing the analysis tools(DidFail, COVERT), our server will not take another apk inputs if there's a processing going on. This issue can be solved by increasing the computing power and the memory of the server, or implementing the asynchronous mechanism at the server-end.  
+
 
 #Reference tools/libraries/web services
 * Beautiful Soup ([https://www.crummy.com/software/BeautifulSoup/](https://www.crummy.com/software/BeautifulSoup/))
