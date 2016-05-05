@@ -79,37 +79,42 @@ ct tool outputs until it finishes.
 ll it by clicking "Get Vulnerable Path" button until they get the result of vulnerable path visualization.
 
 #Directory tree
-- analysis_tool/
-  - covert_dist/ and didfail/ are supposed to be here (there not exist in git repository)
-- APK/
-  - apk files that we have examined
-- apkfiles/
-  - apk files that users upload will be here
-- css/
-- image/
-- interCompo/
-  - used for Intra Component Communication visualization
-- javascripts/
-- overallSystemArchitecture/
-  - used for Overall system architecture and Vulnerable paths visualization
-- scripts/
-- compo.html
-  - Intra Component Communication Visualization
-- exec.php
-  - main routine
-- graph.json
-  - used for Vulnerable paths visualization
-- index.html
-  - Vulnerable paths visualization
-- overallArchitecture.html
-  - Overall system architecture visualization
-- php.ini
-- README.md
-  - this file
-- top.html
-  - portal page
-- vulnerable.php
-  - sub routine for showing vulnerable path visualization
+
+```
+Root
+├──analysis_tool/
+│     ├──covert_dist/ 
+│     └──didfail/ (not existed in this github repository)
+├──APK/  
+│     apk files that we have examined
+├──apkfiles/
+│     apk files that users upload will be here
+├──css/
+├──image/
+├──interCompo/
+│     used for Intra Component Communication visualization
+├──javascripts/
+├──overallSystemArchitecture/
+│     used for Overall system architecture and Vulnerable paths visualization
+├──scripts/
+├──compo.html
+│     Intra Component Communication Visualization
+├──exec.php
+│     main routine
+├──graph.json
+│     used for Vulnerable paths visualization
+├──index.html
+│     Vulnerable paths visualization
+├──overallArchitecture.html
+│     Overall system architecture visualization
+├──php.ini
+├──README.md
+│     this file
+├──top.html
+│     portal page
+└──vulnerable.php
+      sub routine for showing vulnerable path visualization
+```
 
 #Execution flow
 - Prepare
