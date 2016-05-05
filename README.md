@@ -10,10 +10,13 @@ This is a final project for Software Architecture ( CSCI578 ) at University of S
 ![picture alt](https://github.com/pinchih/CS578-Final-Project/blob/master/image/system_graph.png?raw=true)
 
 #Overall system architecture visualization example
+
 ![](/image/overall_system_architecture_example.gif)
+
 The overall system architecture visulaization gives you glance of how your application and other applications that we chosen interact with each other in terms of ICC calls. You may mouse over the path info icon to see what components were interacting, or mouse over the node to see what user permissions are alloed for this application. If you would like to know the interaction among components within an application, just click the name of that app, it will open up another window and show you the result.
 
 #Vulnerable paths visualization example
+
 ![](https://github.com/pinchih/CS578-Final-Project/blob/master/image/VulnerablePath_example.gif?raw=true)
 The vulunerable path visualization gives you the sense of what are the vulnerable paths suggested by the analysis tool, including COVERT and DidFail. The path suggested by COVERT will have a little C icon attached to the link while DidFail will have a D icon. Uers can mouse over the icon to see the detail of the vulnerable path.
 
@@ -42,6 +45,7 @@ Go to our [website](http://192.241.189.66/top.html), upload your applications, a
 
 #Architectural pattern/styles used
 The architectural style that we chose for implementing this project is Client-Server sytle. The main reason for using this  style is because that this project is going to be a web-based tool, which narrows us done to few architectural styles that we can choose from, and practically, a Client-Server style will be a safe and easy way to go, because it's been tested and proven to be reliable.
+
 In this sytle, the components of the system will be mulitple clients and one server, and the connector between clients and server will be the RPC-based network protocols, such as TCP/IP. Technically speaking, the server in a Client-Server style should be capable of handling multiple connection from different clients, however, in our case, due to the heavy loading of executing the analysis tools(DidFail, COVERT), our server will not take another apk inputs if there's a processing going on. This issue can be solved by increasing the computing power and the memory of the server, or implementing the asynchronous mechanism at the server-end.  
 
 
