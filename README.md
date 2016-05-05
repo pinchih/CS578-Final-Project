@@ -30,10 +30,14 @@ Overall system architecture and vulnerable paths visualization show the ICC call
 #Analysis for real application
 - Sample applications
 ![picture alt](https://github.com/pinchih/CS578-Final-Project/blob/master/image/Analysis_Overall_1.png)
-  - Echoer application, which is sample application of DidFail, has vulnerable path that is detected by both COVERT and DidFail. COVERT suggests this vulnerability is Intent Spoofing. We can see that the Intent type is Action.SEND by seeing overall system architecture.
-  - CatDogToe, which was implemented by us for Homework 2, has vulnerable path that is detected by both COVERT and DidFail. This is also recognized as Intent Spoofing. We can see that the Intent type is Action.START_SERVICE.
+![picture alt](https://github.com/pinchih/CS578-Final-Project/blob/master/image/Analysis_Vul_1.png)
+  - Echoer application, which is a sample application of DidFail, is vulnerable that is detected by both COVERT and DidFail. COVERT suggests this vulnerability is Intent Spoofing. We can see that the Intent type is Action.SEND by seeing overall system architecture.
+  - CatDogToe, which was implemented by us for Homework 2, is vulnerable that is detected by both COVERT and DidFail. This is also recognized as Intent Spoofing. We can see that the Intent type is Action.START_SERVICE.
 
 - Real applications with Sample
+![picture alt](https://github.com/pinchih/CS578-Final-Project/blob/master/image/Analysis_Overall_2.png)
+![picture alt](https://github.com/pinchih/CS578-Final-Project/blob/master/image/Analysis_Vul_2.png)
+  - "Send2U" application can receive Action.SEND Intent, and it is vulnerable detected by COVERT. It implies users should user "Send2U" application carefully.
 
 #Tools and how to use them
 - OverallArchitectureXMLConverter.py
