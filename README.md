@@ -13,9 +13,13 @@ This is a final project for Software Architecture ( CSCI578 ) at University of S
 ![](/image/overall_system_architecture_example.gif)
 The overall system architecture visulaization gives you glance of how your application and other applications that we chosen interact with each other in terms of ICC calls. You may mouse over the path info icon to see what components were interacting, or mouse over the node to see what user permissions are alloed for this application. If you would like to know the interaction among components within an application, just click the name of that app, it will open up another window and show you the result.
 
-#Vulerable paths visualization example
+#Vulnerable paths visualization example
 ![](https://github.com/pinchih/CS578-Final-Project/blob/master/image/VulnerablePath_example.gif?raw=true)
 The vulunerable path visualization gives you the sense of what are the vulnerable paths suggested by the analysis tool, including COVERT and DidFail. The path suggested by COVERT will have a little C icon attached to the link while DidFail will have a D icon. Uers can mouse over the icon to see the detail of the vulnerable path.
+
+#Intra Component Communication within an application
+![](https://github.com/pinchih/CS578-Final-Project/blob/master/image/intra_compo_example.gif?raw=true)
+Overall system architecture and vulnerable paths visualization show the ICC calls among applications, but if users would like to know what components are interacting with what components inside an application, just simply click the name of the application in either overall system architecture or vulnerable paths visualization, a new window will open and show you the intra component communications.
 
 #Tools and how to use them
 - OverallArchitectureXMLConverter.py
