@@ -79,12 +79,12 @@ ct tool outputs until it finishes.
 ll it by clicking "Get Vulnerable Path" button until they get the result of vulnerable path visualization.
 
 #Directory tree
-- analysis_tool
+- analysis_tool/
   - covert_dist/ and didfail/ are supposed to be here (there not exist in git repository)
 - APK/
   - apk files that we have examined
 - apkfiles/
-  - apk files that ther user uploaded
+  - apk files that users upload will be here
 - css/
 - image/
 - interCompo/
