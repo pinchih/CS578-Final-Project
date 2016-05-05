@@ -4,7 +4,7 @@ This is a final project for Software Architecture ( CSCI578 ) at University of S
 #Members
 * [Chris Daniels](https://github.com/chris-daniels)
 * [Pin-Chih Lin](https://github.com/pinchih)
-* [Tomita Tatsuhiko](https://github.com/tomitatsu)
+* [Tatsuhiko Tomita](https://github.com/tomitatsu)
 
 #An overview of the system     
 ![picture alt](https://github.com/pinchih/CS578-Final-Project/blob/master/image/system_graph.png?raw=true)
@@ -59,10 +59,10 @@ Go to our [website](http://192.241.189.66/top.html), upload your applications, a
 
 - Polling Pattern
   - To improve userability, we decided to use polling pattern in two cases:
-    1. While analizing overall system architecture, we keep to show consecutive dot (.) on regular intervals s
+      - While analizing overall system architecture, we keep to show consecutive dot (.) on regular intervals s
 o that users can see it is working. To know the end of the process, our system polls a log file that the extra
 ct tool outputs until it finishes.
-    2. After showing overall system architecture, we continue to analyze vulnerable path in background. Hence,
+      - After showing overall system architecture, we continue to analyze vulnerable path in background. Hence,
  users can get overall system architecture first before we get whole vulnerable path analysis. Users should po
 ll it by clicking "Get Vulnerable Path" button until they get the result of vulnerable path visualization.
 
