@@ -60,7 +60,8 @@ var bubbleRadius = 10;
 let bubbleOffSet = (nodeRadius+bubbleRadius)/Math.sqrt(2);	
 
 let lineOffSet = 35;
-let curvedLevel = [-100,100][Math.floor(Math.random()*2)];
+let curvedLevelDidFail = [-100,100][Math.floor(Math.random()*2)];
+let curvedLevelCovert = [-33,33][Math.floor(Math.random()*2)];
 
 d3.json("graph.json", function(error, graph) {
 
@@ -135,9 +136,15 @@ link = link.data(graph.links).enter().append("path")
 
 })
 */
+
 .style("stroke", "gray")
 .attr("d", function(d) {
-    return draw_curve(d.source.x, d.source.y, d.target.x, d.target.y, curvedLevel);
+	if(d.description == "DidFail"){
+		return draw_curve(d.source.x, d.source.y, d.target.x, d.target.y, curvedLevelDidFail);	
+	}else{
+		return draw_curve(d.source.x, d.source.y, d.target.x, d.target.y, curvedLevelCovert);	
+	}
+    
  })
 .attr("fill","transparent")
 .attr("x1", function(d) { return d.source.x})
@@ -149,7 +156,6 @@ text = text.data(graph.nodes).enter().append("text")
 .attr("x", function (d) { return d.x; })
 .attr("y", function (d) { return d.y; })
 .text(function(d){ 
-	console.log(d.Name)
 	return d.Name
 })
 .on("click", function(d) { window.open("/compo.html?file=interCompo/output/"+d.Name+".json"); })
@@ -158,16 +164,25 @@ text = text.data(graph.nodes).enter().append("text")
 .attr("fill", "black");
 
 toolImage = toolImage.data(graph.links).enter().append("image")
-.attr("x", function(d) { return ((d.source.x - d.target.x)/2 + d.target.x); })
-.attr("y", function(d) { return ((d.source.y - d.target.y)/2 + d.target.y); })
+.attr("x", function(d) {
+	var x_loc = ((d.source.x - d.target.x)/2 + d.target.x)	
+	if(d.description == "DidFail"){
+		return x_loc + curvedLevelDidFail
+	}else{
+		return x_loc
+	}
+	
+		
+})
+.attr("y", function(d) { 
+	return ((d.source.y - d.target.y)/2 + d.target.y); 
+})
 .attr("xlink:href",function(d) {
 
 	if(d.description != "None"){
 
 		return "./image/"+d.byTool+".png";
 	}
-
-	
 })
 .attr('width', 40)
 .attr('height', 40)
@@ -239,13 +254,24 @@ function nudge(dx, dy) {
 	// Link  - from point
 	link.filter(function(d) { return d.source.selected; })
 	.attr("d", function(d) {
-	    return draw_curve(d.source.x, d.source.y, d.target.x, d.target.y, curvedLevel);
+		if(d.description == "DidFail"){
+			return draw_curve(d.source.x, d.source.y, d.target.x, d.target.y, curvedLevelDidFail);	
+		}else{
+			return draw_curve(d.source.x, d.source.y, d.target.x, d.target.y, curvedLevelCovert);	
+		}
+	    
 	 })
 
 	// Link - to point 
 	link.filter(function(d) { return d.target.selected; })
 	.attr("d", function(d) {
-	    return draw_curve(d.source.x, d.source.y, d.target.x, d.target.y, curvedLevel);
+
+		if(d.description == "DidFail"){
+			return draw_curve(d.source.x, d.source.y, d.target.x, d.target.y, curvedLevelDidFail);	
+		}else{
+			return draw_curve(d.source.x, d.source.y, d.target.x, d.target.y, curvedLevelCovert);	
+		}
+	    
 	 })
 
 	// toolImage
@@ -255,12 +281,32 @@ function nudge(dx, dy) {
 		}
 	})
 	.attr("x", function(d) {
+
 		var temp = (d.source.x - d.target.x)/2 + d.target.x;
-		return temp += dx; 
+		if(d.description == "DidFail"){
+			temp += curvedLevelDidFail
+			return temp += dx; 	
+		}else{
+			return temp += dx; 	
+		}
+		
+		
+
 	})
 	.attr("y", function(d) { 
 		var temp = (d.source.y - d.target.y)/2 + d.target.y;
-		return  temp += dy;
+		
+		return temp += dy; 		
+
+		/*
+		if(d.description == "DidFail"){
+			temp += curvedLevelDidFail
+			
+		}else{
+			return temp += dy; 	
+		}
+		*/
+
 	 });
 
 
@@ -286,6 +332,18 @@ var index = Math.floor((Math.random() * colorArray.length));
 return colorArray[index];
 
 }
+
+
+function containsObject(obj, list) {
+    var i;
+    for (i = 0; i < list.length; i++) {
+        if (list[i] == obj) {
+            return true;
+        }
+    }
+    return false;
+}
+
 
 function draw_curve(Ax, Ay, Bx, By, M) {
 
