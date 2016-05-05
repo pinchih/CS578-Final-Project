@@ -78,6 +78,62 @@ ct tool outputs until it finishes.
  users can get overall system architecture first before we get whole vulnerable path analysis. Users should po
 ll it by clicking "Get Vulnerable Path" button until they get the result of vulnerable path visualization.
 
+#Directory tree
+- analysis_tool
+  - covert_dist/ and didfail/ are supposed to be here (there not exist in git repository)
+- APK/
+  - apk files that we have examined
+- apkfiles/
+  - apk files that ther user uploaded
+- css/
+- image/
+- interCompo/
+  - used for Intra Component Communication visualization
+- javascripts/
+- overallSystemArchitecture/
+  - used for Overall system architecture and Vulnerable paths visualization
+- scripts/
+- compo.html
+  - Intra Component Communication Visualization
+- exec.php
+  - main routine
+- graph.json
+  - used for Vulnerable paths visualization
+- index.html
+  - Vulnerable paths visualization
+- overallArchitecture.html
+  - Overall system architecture visualization
+- php.ini
+- README.md
+  - this file
+- top.html
+  - portal page
+- vulnerable.php
+  - sub routine for showing vulnerable path visualization
+
+#Execution flow
+- Prepare
+  - uploaded files are saved in `TOP/apkfiles`
+- COVERT (for overall architecture visualization)
+  - copy apkfiles to `TOP/analysis_tool/covert/app_repo`
+  - run COVERT (only extract apks (i.e. don't execute whole process) and get `model/` directory)
+  - copy `TOP/analysis_tool/covert/app_repo/analysis/model/.apk` to `TOP/overallSystemArchitecture`
+  - run converter `OverallArchitectureXMLConverter.py` and get `overallArchitecture.json`
+  - run converer `soup.py` and get a series of `.json` files for each apks
+  - wait until there exist "__Finieshed__" in `TOP/scripts/log.txt`
+  - include `TOP/overallArchitecture.html` and get overall visualization
+- COVERT (vulnarable path)
+  - run COVERT (get `apkfiles.xml` that includes vulnerable path)
+  - copy `TOP/analysis_tool/covert/app_repo/apkfiles.xml` to `TOP/overallSystemArichitecture`
+  - run converter `VulnerablePathXMLConverter.py` for vulnerable path, and get `graph.json`
+- DidFail (vulnarable path)
+  - run DidFail (get `.fd.xml` , `flows.out` that includes vulnerable path)
+  - when DidFail finishes, it outputs "__Finished__" into `TOP/scripts/log_vul.txt` so that we can know whether it finishes or no by seeing the file
+  - copy `TOP/analysis_tool/didfail/out/flows.out` and `.fd.xml` to `TOP/overallSystemArchitecture`
+  - run converter `VulnerablePathDidFail.py`, and update `graph.json`
+  - include `TOP/index.html` and get valunarable path visualization
+
+
 #Reference tools/libraries/web services
 * Beautiful Soup ([https://www.crummy.com/software/BeautifulSoup/](https://www.crummy.com/software/BeautifulSoup/))
 * D3.js ([https://d3js.org/](https://d3js.org/))
