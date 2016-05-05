@@ -87,16 +87,17 @@ def processPhaseTwo(inputFile):
 			link['dataFlow'] = False
 			
 			for i in range(len(obj['nodes'])):
-				if 'Name' in obj['nodes'][i].keys():
-					if obj['nodes'][i]['Name'] in edge['source']:
+				#print obj['nodes'][i]['Name']
+				if 'package' in obj['nodes'][i].keys():
+					
+					if obj['nodes'][i]['package'] in edge['source']:
 						link['source'] = i
-					if obj['nodes'][i]['Name'] in edge['dest']:
+					if obj['nodes'][i]['package'] in edge['dest']:
 						link['target'] = i
+						
 			link['resources'] = edge['resources']
 			obj['links'].append(link)
 			
-			
-
 		elif '### \'IntentResult(' in line:
 			line = inputFile.readline().strip()
 			print 2
@@ -107,12 +108,10 @@ def processPhaseTwo(inputFile):
 def main(args):
 	global obj
 	
-	    
 	#open generated json file and load into object
 	with open('../graph.json','r') as jsonFile:
 		obj = json.load(jsonFile)
 		jsonFile.close()
-		
 	
 	#open output file
 	with open('../graph.json','w+') as outputFile:
