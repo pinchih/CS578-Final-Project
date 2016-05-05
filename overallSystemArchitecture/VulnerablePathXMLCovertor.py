@@ -309,6 +309,7 @@ filesInDir = []
 appNameToNumberDict = {}
 linkedPair = {}
 
+
 covertXML = 'apkfiles.xml'
 
 
@@ -364,6 +365,7 @@ vulnerableApp = {}
 soup2 = BeautifulSoup(open(covertXML),"xml")
 
 for i in soup2.findAll('vulnerability'):
+
 	vulnerableComponent = str(i.find('vulnerabilityElements').find('description').text)
 	for app in AppList:
 		for c in app.componentList:
@@ -395,14 +397,16 @@ for key, value in  linkedPair.iteritems():
 		json_string = json_string + "\"fromComponent\":" + "\"" + str(value[2]) + "\","
 		json_string = json_string + "\"toComponent\":" + "\"" + str(value[3]) + "\","
 		json_string = json_string + "\"byTool\":" + "\"" + "Covert" + "\","
-		json_string = json_string + "\"description\":" + "\"" + str(description) + "\","
+		json_string = json_string + "\"type\":" + "\"" + str(description[0]) + "\","
+		json_string = json_string + "\"description\":" + "\"" + str(description[1]) + "\","
 		json_string = json_string + "\"fromIntent\":" + "\"" + str(value[1]) + "\"" + "}"
 	else:
 		json_string = json_string + "{\"source\":" + str(source) +",\"target\":" + str(target) + ","
 		json_string = json_string + "\"fromComponent\":" + "\"" + str(value[2]) + "\","
 		json_string = json_string + "\"toComponent\":" + "\"" + str(value[3]) + "\","
 		json_string = json_string + "\"byTool\":" + "\"" + "Covert" + "\","
-		json_string = json_string + "\"description\":" + "\"" + str(description) + "\","
+		json_string = json_string + "\"type\":" + "\"" + str(description[0]) + "\","
+		json_string = json_string + "\"description\":" + "\"" + str(description[1]) + "\","
 		json_string = json_string + "\"fromIntent\":" + "\"" + str(value[1]) + "\"" + "},"
 	index = index + 1	
 json_string = json_string + "]}"
