@@ -140,8 +140,8 @@ ll it by clicking "Get Vulnerable Path" button until they get the result of vuln
 * DigitalOcean ([https://www.digitalocean.com/](https://www.digitalocean.com/))
 * DidFail ([https://www.cs.cmu.edu/~wklieber/didfail/](https://www.cs.cmu.edu/~wklieber/didfail/))
 * COVERT ([http://www.sdalab.com/tools/covert](http://www.sdalab.com/tools/covert))
-
-
+* Apache ([https://httpd.apache.org/](https://httpd.apache.org/))
+* PHP ([https://secure.php.net/manual/ja/index.php](https://secure.php.net/manual/ja/index.php))
 
 
 
