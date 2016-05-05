@@ -1,5 +1,5 @@
 #What's this?
-This is a final project for Software Architecture ( CSCI578 ) at University of Southern California. In this project, we designed and implemented a web-based tool that enables users to check if installed apps on their Android devices are exposed to any threats of Inter-Component Communication (ICC) attacks and users can see a visualized result of overall architecture of targeted apps and also the potential vulnerable paths among applications.
+This is a final project for Software Architecture ( CSCI578 ) at University of Southern California. In this project, we designed and implemented a web-based tool that enables users to check if installed apps on their Android devices are exposed to any threats of Inter-Component Communication (ICC) attacks and users can see a visualized result of overall architecture of targeted apps and also the potential vulnerable paths among applications. The analysis tools that we used in this project are [COVERT](http://www.sdalab.com/tools/covert)) and [DidFail](https://www.cs.cmu.edu/~wklieber/didfail/)).
 
 #Members
 * [Chris Daniels](https://github.com/chris-daniels)
